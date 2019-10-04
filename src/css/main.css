@@ -1,0 +1,13 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.transform-3d-left {
+  transform: scale(1) perspective(500px) rotateX(0deg) rotateY(-15deg) rotateZ(0deg) translateY(0px);
+}
+
+.transform-3d-right {
+  transform: scale(1) perspective(500px) rotateX(0deg) rotateY(15deg) rotateZ(0deg) translateY(0px);
+}

@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tail Components</title>
+    <link rel="stylesheet" href="dist/css/main.css" />
+    <link rel="stylesheet" href="src/css/prism.css" />
+  </head>
+  <body>
+    <header>
+      <div class="w-full">
+        <div class="flex flex-wrap">
+          <div class="w-full flex flex-col justify-center items-center h-64 bg-indigo-700">
+            <h1 class="text-white text-5xl mb-3">Tail Components</h1>
+            <p class="inline-block text-gray-200 max-w-md text-center">
+              Components made for your next Tailwind project. Get a quick baseline to work from and
+              apply your own styling them to.
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="max-w-4xl mx-auto">
+      <div class="container mx-auto">
+        <h2 class="font-black py-5 text-4xl">Text</h2>
+        <h1 class="text-5xl font-bold">Heading 1</h1>
+        <h2 class="text-4xl font-bold">Heading 2</h2>
+        <h3 class="text-2xl font-bold">Heading 3</h3>
+        <h4 class="font-bold">Heading 4</h4>
+        <a class="font-bold cursor-pointer text-indigo-700" href="#">links</a>
+      </div>
+      <div class="container mx-auto">
+        <h2 class="font-black py-5 text-4xl">Cards</h2>
+        <div class="flex flex-wrap">
+          <div class="w-full max-w-xs">
+            <div class="flex flex-col bg-white border rounded-lg shadow-md">
+              <div class="">
+                <img class="block h-auto w-100% rounded-lg" src="img-1.jpg" alt="Nebula Cloud" />
+              </div>
+              <div class="p-5">
+                <h4 class="text-black font-bold">Nebula Cloud</h4>
+                <p class="text-gray-700">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo tempora maxime
+                  quidem excepturi.
+                </p>
+              </div>
+              <div class="px-5 pb-5">
+                <button
+                  class="border font-bold bg-indigo-700 hover:bg-indigo-500 text-white rounded py-2 px-3 cursor-pointer"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="w-full max-w-xs">
+            <div class="flex flex-col bg-white border rounded-lg shadow-md mt-8">
+              <div class="mx-4 -mt-8 rounded-lg overflow-hidden shadow-md">
+                <img class="block h-auto w-full" src="img-1.jpg" alt="Nebula Cloud" />
+              </div>
+              <div class="p-5">
+                <h4 class="text-black font-bold">Nebula Cloud</h4>
+                <p class="text-gray-700">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo tempora maxime
+                  quidem excepturi.
+                </p>
+              </div>
+              <div class="px-5 pb-5">
+                <button
+                  class="border font-bold bg-indigo-700 hover:bg-indigo-500 text-white rounded py-2 px-3 cursor-pointer"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="w-full max-w-xs mt-10">
+            <div
+              class="flex flex-col bg-white border rounded-lg overflow-hidden shadow-md transform-3d-left"
+            >
+              <div class="">
+                <img class="block h-auto w-100% rounded-lg" src="img-1.jpg" alt="Nebula Cloud" />
+              </div>
+              <div class="p-5">
+                <h4 class="text-black font-bold">Nebula Cloud</h4>
+                <p class="text-gray-700">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo tempora maxime
+                  quidem excepturi.
+                </p>
+              </div>
+              <div class="px-5 pb-5">
+                <button
+                  class="border font-bold bg-indigo-700 hover:bg-indigo-500 text-white rounded py-2 px-3 cursor-pointer"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mx-auto">
+        <h2 class="font-black py-5 text-4xl">Buttons</h2>
+        <div class="w-1/4">
+          <h3 class="mb-5 font-bold">Default button</h3>
+          <button
+            class="border font-bold bg-indigo-700 hover:bg-indigo-500 text-white rounded py-2 px-3 cursor-pointer"
+          >
+            Button
+          </button>
+        </div>
+        <div class="w-1/4">
+          <h3 class="my-5 font-bold">Medium button</h3>
+          <button
+            class="border font-bold bg-indigo-700 hover:bg-indigo-500 text-white rounded py-3 px-4 cursor-pointer"
+          >
+            Button
+          </button>
+        </div>
+        <div class="w-1/4">
+          <h3 class="my-5 font-bold">Large button</h3>
+          <button
+            class="border font-bold bg-indigo-700 hover:bg-indigo-500 text-white rounded py-4 px-5 cursor-pointer"
+          >
+            Button
+          </button>
+        </div>
+        <div class="w-1/4">
+          <h3 class="my-5 font-bold">Icon button</h3>
+          <button
+            class="flex items-center bg-indigo-700 text-white border font-bold text-black rounded py-2 px-3 cursor-pointer hover:bg-indigo-600"
+          >
+            Button
+            <span class="flex items-center ml-2">
+              <box-icon name="cube" color="white"></box-icon>
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="container mx-auto">
+        <h2 class="font-black py-5 text-4xl">Inputs</h2>
+        <div class="w-1/3">
+          <h3 class="my-5 font-bold">Input</h3>
+          <input
+            class="flex items-center border p-3 rounded bg-white shadow"
+            placeholder="Enter Text"
+          />
+        </div>
+        <div class="w-1/3">
+          <h3 class="my-5 font-bold">Input button</h3>
+          <div
+            class="flex items-stretch flex-no-wrap w-full relative border bg-white rounded shadow"
+          >
+            <input class="w-full pl-3 py-3" placeholder="Enter Text" />
+            <button class="bg-gray-200 hover:bg-gray-200 p-2">Submit</button>
+          </div>
+        </div>
+        <div class="w-1/3">
+          <h3 class="my-5 font-bold">Textarea</h3>
+          <textarea
+            class="flex items-center border p-3 rounded bg-white shadow"
+            name=""
+            id=""
+            cols="30"
+            rows="5"
+          ></textarea>
+        </div>
+        <div class="w-1/3"></div>
+      </div>
+      <div class="container mx-auto">
+        <h2 class="font-black py-5 text-4xl">Selector</h2>
+        <div class="flex flex-wrap">
+          <div class="w-full">
+            <h3 class="font-bold font-black mb-5">Single Selector:</h3>
+            <div class="inline-block relative">
+              <select
+                class="block appearance-none w-full bg-white border py-3 px-3 pr-8 rounded cursor-pointer hover:bg-gray-100 focus:bg-gray-100 focus:border-gray-50 overflow-hidden"
+              >
+                <option value="">Select an option</option>
+                <option value="Nebula">Nebula</option>
+                <option value="Nebula">Nebula</option>
+              </select>
+              <div
+                class="pointer-events-none absolute inset-y-0 right-0 pr-3 flex items-center text-gray-700"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="5.3" overflow="scroll">
+                  <path
+                    d="M1 1l4.3 3.2c.1.1.3.1.5 0L10 1"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-miterlimit="10"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mx-auto">
+        <h2 class="font-black py-5 text-4xl">Radio/Checkbox Buttons</h2>
+        <div class="flex flex-wrap">
+          <div class="w-full">
+            <h3 class="font-bold font-black mb-5">Radio Button:</h3>
+            <input
+              class="appearance-none inline-block border border-gray-400 bg-white h-5 w-5 rounded-full focus:bg-indigo-700"
+              type="radio"
+              name="radioInput"
+              value="Nebula"
+            />
+            <h3 class="font-bold font-black my-5">Checkbox Button:</h3>
+            <input
+              class="appearance-none inline-block bg-white border border-gray-400 h-5 w-5 rounded focus:bg-indigo-700"
+              type="checkbox"
+              name="checkboxInput"
+              value="Nebula"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container mx-auto">
+        <h2 class="font-black py-5 text-4xl">12 Grid System</h2>
+        <div class="w-full">
+          <h3 class="font-black py-2">4 Column Gird</h3>
+          <div class="flex h-12 border">
+            <div class="w-3/12 bg-gray-400"></div>
+            <div class="w-3/12 bg-gray-800"></div>
+            <div class="w-3/12 bg-gray-400"></div>
+            <div class="w-3/12 bg-gray-800"></div>
+          </div>
+          <h3 class="font-black py-2">3 Column Gird</h3>
+          <div class="flex h-12 border">
+            <div class="w-4/12 bg-gray-400"></div>
+            <div class="w-4/12 bg-gray-800"></div>
+            <div class="w-4/12 bg-gray-400"></div>
+          </div>
+          <h3 class="font-black py-2">2 Column Grid</h3>
+          <div class="flex h-12 border">
+            <div class="w-6/12 bg-gray-400"></div>
+            <div class="w-6/12 bg-gray-800"></div>
+          </div>
+          <h3 class="font-black py-2">Full Width Grid</h3>
+          <div class="flex h-12 border">
+            <div class="w-full bg-gray-400"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container mx-auto">
+        <h2 class="font-black py-5 text-4xl">Badges/Pills</h2>
+        <div class="flex">
+          <div class="w-1/6">
+            <span
+              class="flex items-center justify-center bg-indigo-500 font-bold text-white w-24 p-1 rounded"
+              >Badge</span
+            >
+          </div>
+          <div class="w-1/6">
+            <a
+              href="#"
+              class="flex items-center justify-center bg-indigo-500 font-bold text-white w-24 p-1 cursor-pointer rounded"
+              >Link</a
+            >
+          </div>
+          <div class="w-1/6">
+            <span
+              class="flex items-center justify-center bg-indigo-500 font-bold text-white rounded-full w-24 p-1"
+              >Pill</span
+            >
+          </div>
+          <div class="w-1/6">
+            <a
+              href="#"
+              class="flex items-center justify-center bg-indigo-500 font-bold text-white rounded-full w-24 p-1 cursor-pointer"
+              >Link</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- code preview start-->
+      <div class="container">
+        <pre>   
+          <code class="language-html">
+            Badge:
+            &lt;span class="flex items-center justify-center bg-indigo-500 font-bold text-white w-24 p-1 rounded"&gt;Badge&lt;/span&gt;
+
+            Badge Link:
+
+            &lt;a href="#" class="flex items-center justify-center bg-indigo-500 font-bold text-white w-24 p-1 cursor-pointer rounded"&gt;Link&lt;/a&gt;
+
+            Pill:
+
+            &lt;span class="flex items-center justify-center bg-indigo-500 font-bold text-white rounded-full w-24 p-1"&gt;Pill&lt;/span&gt;
+
+            Pill Link:
+
+            &lt;a href="#" class="flex items-center justify-center bg-indigo-500 font-bold text-white rounded-full w-24 p-1 cursor-pointer"&gt;Link&lt;/a&gt;
+
+          </code>
+        </pre>
+      </div>
+      <!-- code preview ends-->
+      <div class="container">
+        <h2 class="font-black py-5 text-4xl">Hero Sections</h2>
+        <div class="flex">
+          <div class="w-screen bg-indigo-700">
+            <div class="flex">
+              <div class="w-full flex flex-col justify-center items-center h-64">
+                <h1 class="text-white text-5xl mb-3">Nebula Components</h1>
+                <p class="inline-block text-gray-200 max-w-md text-center">
+                  Components made for your next Tailwind project. Get a quick baseline to work from
+                  and apply your own styling them to.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- code preview start-->
+      <div class="container">
+        <pre>   
+          <code class="language-html">
+            &lt;div class="w-screen bg-indigo-700"&gt;
+              &lt;div class="flex"&gt;
+                &lt;div class="w-full flex flex-col justify-center items-center h-64"&gt;
+                  &lt;h1 class="text-white text-5xl mb-3">Nebula Components&lt;/h1&gt;
+                  &lt;p class="inline-block text-gray-200 max-w-md text-center"&gt;
+                    Components made for your next Tailwind project. Get a quick baseline to work from
+                    and apply your own styling them to.
+                  &lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          </code>
+        </pre>
+      </div>
+      <!-- code preview ends-->
+      <div class="container">
+        <div class="flex mt-5">
+          <div class="w-screen bg-indigo-700">
+            <div class="flex flex-wrap">
+              <div class="w-1/2">
+                <div class="w-full flex flex-col justify-center items-center h-full">
+                  <div class="flex flex-col p-5 max-w-sm">
+                    <h1 class="text-white text-5xl mb-3">Nebula Components</h1>
+                    <p class="inline-block text-gray-200 leading-relaxed">
+                      Components made for your next Tailwind project. Get a quick baseline to work
+                      from and apply your own styling them to.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-1/2">
+                <div class="w-full flex flex-col justify-center items-center h-full">
+                  <img src="/To-The-Stars.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- code preview start-->
+      <div class="container">
+        <pre>   
+          <code class="language-html">
+            &lt;div class="flex flex-wrap"&gt;
+              &lt;div class="w-1/2"&gt;
+                &lt;div class="w-full flex flex-col justify-center items-center h-full"&gt;
+                  &lt;div class="flex flex-col p-5 max-w-sm"&lt;
+                    &lt;h1 class="text-white text-5xl mb-3">Nebula Components&lt;/h1&gt;
+                    &lt;p class="inline-block text-gray-200 leading-relaxed"&gt;
+                      Components made for your next Tailwind project. Get a quick baseline to work
+                      from and apply your own styling them to.
+                    &lt;/p&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="w-1/2"&gt;
+                &lt;div class="w-full flex flex-col justify-center items-center h-full"&gt;
+                  &lt;img src="/To-The-Stars.svg" alt="" /&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          </code>
+        </pre>
+      </div>
+      <!-- code preview ends-->
+      <div class="container mx-auto">
+        <h2 class="font-black py-5 text-4xl">Table</h2>
+        <div class="flex">
+          <div class="w-full">
+            <table class="table-auto w-full border">
+              <thead class="bg-gray-200">
+                <tr>
+                  <th class="p-3">#</th>
+                  <th class="p-3 text-left">First</th>
+                  <th class="p-3 text-left">Last</th>
+                  <th class="p-3 text-left">Handle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-t">
+                  <th class="p-4">1</th>
+                  <td class="p-4">Mark</td>
+                  <td class="p-4">Otto</td>
+                  <td class="p-4">@mdo</td>
+                </tr>
+                <tr class="border-t">
+                  <th class="p-4">2</th>
+                  <td class="p-4">Jacob</td>
+                  <td class="p-4">Thornton</td>
+                  <td class="p-4">@fat</td>
+                </tr>
+                <tr class="border-t">
+                  <th class="p-4">2</th>
+                  <td class="p-4">Jacob</td>
+                  <td class="p-4">Thornton</td>
+                  <td class="p-4">@fat</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- code preview start-->
+      <div class="container">
+        <pre>   
+          <code class="language-html">
+            &lt;table class="table-auto w-full border"&gt;
+              &lt;thead class="bg-gray-200"&gt;
+                &lt;tr&gt;
+                  &lt;th class="p-3">#&lt;/th&gt;
+                  &lt;th class="p-3 text-left">First&lt;/th&gt;
+                  &lt;th class="p-3 text-left">Last&lt;/th&gt;
+                  &lt;th class="p-3 text-left">Handle&lt;/th&gt;
+                &lt;/tr&gt;
+              &lt;/thead&gt;
+              &lt;tbody&gt;
+                &lt;tr class="border-t"&gt;
+                  &lt;th class="p-4">1&lt;/th&gt;
+                  &lt;td class="p-4">Mark&lt;/td&gt;
+                  &lt;td class="p-4">Otto&lt;/td&gt;
+                  &lt;td class="p-4">@mdo&lt;/td&gt;
+                &lt;/tr>
+                &lt;tr class="border-t"&gt;
+                &lt;th class="p-4">1&lt;/th&gt;
+                &lt;td class="p-4">Mark&lt;/td&gt;
+                &lt;td class="p-4">Otto&lt;/td&gt;
+                &lt;td class="p-4">@mdo&lt;/td&gt;
+              &lt;/tr>
+              &lt;/tbody>
+            &lt;/table>
+          </code>
+        </pre>
+      </div>
+      <!-- code preview ends-->
+      <div class="container mx-auto">
+        <h2 class="font-black py-5 text-4xl">List</h2>
+        <div class="flex flex-wrap">
+          <div class="w-full">
+            <h3 class="font-bold font-black">Unordered List:</h3>
+            <ul>
+              <li class="py-3">Nebula</li>
+              <li class="pb-3">Nebula</li>
+              <li class="pb-3">Nebula</li>
+              <li class="pb-3">Nebula</li>
+              <li class="pb-3">Nebula</li>
+            </ul>
+          </div>
+          <div class="w-full">
+            <h3 class="font-bold font-black">Ordered List:</h3>
+            <ol class="list-decimal pl-4">
+              <li class="py-3">Tail Components</li>
+              <li class="py-3">Tail Components</li>
+              <li class="py-3">Tail Components</li>
+              <li class="py-3">Tail Components</li>
+              <li class="py-3">Tail Components</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <!-- code preview start-->
+      <div class="container">
+        <pre>   
+          <code class="language-html">
+            Unordered List:
+
+            &lt;ul&gt;
+              &lt;li class="py-3"&gt;Nebula&lt;/li&gt;
+              &lt;li class="pb-3"&gt;Nebula&lt;/li&gt;
+              &lt;li class="pb-3"&gt;Nebula&lt;/li&gt;
+              &lt;li class="pb-3"&gt;Nebula&lt;/li&gt;
+              &lt;li class="pb-3"&gt;Nebula&lt;/li&gt;
+            &lt;/ul&gt;
+
+            Ordered List:
+
+            &lt;ol class="list-decimal pl-4"&gt;
+              &lt;li class="py-3"&gt;Tail Components&lt;/li&gt;
+              &lt;li class="pb-3"&gt;Tail Components&lt;/li&gt;
+              &lt;li class="pb-3"&gt;Tail Components&lt;/li&gt;
+              &lt;li class="pb-3"&gt;Tail Components&lt;/li&gt;
+              &lt;li class="pb-3"&gt;Tail Components&lt;/li&gt;
+            &lt;/ol&gt;
+          </code>
+        </pre>
+      </div>
+      <!-- code preview ends-->
+      <div class="container mx-auto">
+        <h2 class="font-black py-5 text-4xl">Accordion</h2>
+        <div class="flex flex-wrap">
+          <div class="w-full">
+            <h3 class="font-bold font-black">
+              Details element is only supported in modern browsers!
+            </h3>
+            <a
+              class="font-bold text-indigo-700"
+              href="https://github.com/javan/details-element-polyfill"
+              >Polyfill For IE</a
+            >
+            <div class="my-5"></div>
+            <details class="bg-white border shadow-lg rounded">
+              <summary class="p-3 border-b cursor-pointer hover:bg-gray-100">Tailwind</summary>
+              <p class="py-5 pl-5">
+                Tailwind CSS is a highly customizable, low-level CSS framework that gives you all of
+                the building blocks you need to build bespoke designs without any annoying
+                opinionated styles you have to fight to override.
+              </p>
+            </details>
+          </div>
+        </div>
+      </div>
+      <!-- code preview start-->
+      <div class="container">
+        <pre>   
+          <code class="language-html">
+            &lt;details class="bg-white border shadow-lg rounded"&gt;
+              &lt;summary class="p-3 border-b cursor-pointer hover:bg-gray-100">Tailwind&lt;/summary&gt;
+              &lt;p class="py-5 pl-5"&gt;
+              Tailwind CSS is a highly customizable, low-level CSS framework that gives you all of the building blocks you need to build bespoke designs without any annoying opinionated styles you have to fight to override.
+              &lt;/p&gt;
+            &lt;/details&gt;
+          </code>
+        </pre>
+      </div>
+      <!-- code preview ends-->
+      <div class="container mx-auto">
+        <h2 class="font-black py-5 text-4xl">Navbar</h2>
+        <nav class="w-full justify-between">
+          <div class="flex items-center max-w-5xl mx-auto shadow rounded p-5">
+            <div class="flex-1">
+              <img class="h-10 w-auto" src="logo.svg" alt="" />
+            </div>
+            <ul class="list-none flex">
+              <li class="mr-4">nav 1</li>
+              <li class="mr-4">nav 2</li>
+              <li class="mr-4">nav 3</li>
+              <li class="mr-4">nav 4</li>
+              <li class=""></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- code preview start-->
+      <div class="container">
+        <pre>   
+          <code class="language-html">
+            &lt;nav class="w-full justify-between"&gt;
+              &lt;div class="flex items-center max-w-5xl mx-auto shadow rounded p-5"&gt;
+                &lt;div class="flex-1"&gt;
+                  &lt;img class="h-10 w-auto" src="logo.svg" alt="" /&gt;
+                &lt;/div&gt;
+                &lt;ul class="list-none flex">
+                  &lt;li class="mr-4">nav 1&lt/li&gt;
+                  &lt;li class="mr-4">nav 2&lt/li&gt;
+                  &lt;li class="mr-4">nav 3&lt/li&gt;
+                  &lt;li class="mr-4">nav 4&lt/li&gt;
+                &lt;/ul&gt;
+              &lt;/div&gt;
+            &lt;/nav&gt;
+          </code>
+        </pre>
+      </div>
+      <!-- code preview ends-->
+    </main>
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <script src="dist/js/app.js"></script>
+  </body>
+</html>
