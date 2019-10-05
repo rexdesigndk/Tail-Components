@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="antialiased font-body">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,14 +7,33 @@
     <title>Tail Components</title>
     <link rel="stylesheet" href="dist/css/main.css" />
     <link rel="stylesheet" href="src/css/prism.css" />
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet" />
   </head>
   <body>
     <header>
+      <nav class="w-full bg-white shadow">
+        <div class="flex justify-between items-center max-w-5xl mx-auto p-5">
+          <div class="flex-initial">
+            <img class="h-10 w-auto" src="dist/img/logo.svg" alt="logo" />
+          </div>
+          <ul class="list-none flex items-center">
+            <li class="mr-4 font-bold">
+              License: MIT
+            </li>
+            <li class="mr-4 flex items-center">
+              <p class="mr-2 font-bold">View Source:</p>
+              <a href="https://github.com/rexdesigndk/Tail-Components" target="_blank"
+                ><box-icon type="logo" name="github"></box-icon
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
       <div class="w-full">
         <div class="flex flex-wrap">
-          <div class="w-full flex flex-col justify-center items-center h-64 bg-indigo-700">
-            <h1 class="text-white text-5xl mb-3">Tail Components</h1>
-            <p class="inline-block text-gray-200 max-w-md text-center">
+          <div class="w-full flex flex-col justify-center items-center p-32 bg-accent">
+            <h1 class="text-black text-5xl mb-3">Do less designing, do more work</h1>
+            <p class="inline-block text-gray-900 max-w-md text-center">
               Components made for your next Tailwind project. Get a quick baseline to work from and
               apply your own styling them to.
             </p>
@@ -57,25 +76,26 @@
           </code>
         </pre>
         <!-- code preview ends-->
-        <a class="font-bold cursor-pointer text-indigo-700" href="#">links</a>
+        <a class="font-bold cursor-pointer text-black hover:text-gray-600" href="#">Am a link!</a>
         <!-- code preview start-->
         <pre>   
           <code class="language-html">
-            &lt;a class="font-bold cursor-pointer text-indigo-700" href="#">links&lt;/a>
+            &lt;a class="font-bold cursor-pointer text-black hover:text-gray-600" href="#">links&lt;/a>
           </code>
         </pre>
         <!-- code preview ends-->
       </div>
-      <div class="container mx-auto">
+      <div class="container">
         <h2 class="font-black py-5 text-4xl">Cards</h2>
+        <h3 class="text-2xl font-bold">Default Card</h3>
         <div class="flex flex-wrap">
           <div class="w-full max-w-xs">
             <div class="flex flex-col bg-white border rounded-lg shadow-md">
               <div>
-                <img class="block h-auto w-100% rounded-lg" src="img-1.jpg" alt="Nebula Cloud" />
+                <img class="block h-auto w-100% rounded-lg" src="dist/img/img-1.jpg" alt="Orange Plane In The Sky" />
               </div>
               <div class="p-5">
-                <h4 class="text-black font-bold">Nebula Cloud</h4>
+                <h4 class="text-black font-bold">Tailwind</h4>
                 <p class="text-gray-700">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo tempora maxime
                   quidem excepturi.
@@ -83,7 +103,7 @@
               </div>
               <div class="px-5 pb-5">
                 <button
-                  class="border font-bold bg-indigo-700 hover:bg-indigo-500 text-white rounded py-2 px-3 cursor-pointer"
+                  class="border font-bold bg-accent text-black hover:bg-gray-500 rounded py-2 px-3 cursor-pointer"
                 >
                   Learn More
                 </button>
@@ -95,29 +115,30 @@
             <code class="language-html">
               &lt;div class="flex flex-col bg-white border rounded-lg shadow-md">
                 &lt;div class="">
-                  &lt;img class="block h-auto w-100% rounded-lg" src="img-1.jpg" alt="Nebula Cloud" />
+                  &lt;img class="block h-auto w-100% rounded-lg" src="" alt="" />
                 &lt;/div>
                 &lt;div class="p-5">
-                  &lt;h4 class="text-black font-bold">Nebula Cloud &lt;/h4>
+                  &lt;h4 class="text-black font-bold">Tailwind&lt;/h4>
                   &lt;p class="text-gray-700">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo tempora maxime
                     quidem excepturi.
                   &lt;/p>
                 &lt;/div>
                 &lt;div class="px-5 pb-5">
-                  &lt;button class="border font-bold bg-indigo-700 hover:bg-indigo-500 text-white rounded py-2 px-3 cursor-pointer">Learn More&lt;/button>
+                  &lt;button class="border font-bold bg-white hover:bg-gray-200 text-black rounded py-2 px-3 cursor-pointer">Learn More&lt;/button>
                 &lt;/div>
               &lt;/div>
             </code>
           </pre>
           <!-- code preview ends-->
           <div class="w-full max-w-xs">
+            <h3 class="text-2xl font-bold">Card Design 2</h3>
             <div class="flex flex-col bg-white border rounded-lg shadow-md mt-8">
               <div class="mx-4 -mt-8 rounded-lg overflow-hidden shadow-md">
-                <img class="block h-auto w-full" src="img-1.jpg" alt="Nebula Cloud" />
+                <img class="block h-auto w-full" src="dist/img/img-1.jpg" alt="Orange Plane In The Sky" />
               </div>
               <div class="p-5">
-                <h4 class="text-black font-bold">Nebula Cloud</h4>
+                <h4 class="text-black font-bold">Tailwind</h4>
                 <p class="text-gray-700">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo tempora maxime
                   quidem excepturi.
@@ -125,7 +146,7 @@
               </div>
               <div class="px-5 pb-5">
                 <button
-                  class="border font-bold bg-indigo-700 hover:bg-indigo-500 text-white rounded py-2 px-3 cursor-pointer"
+                  class="border font-bold bg-accent text-black hover:bg-green-300 rounded py-2 px-3 cursor-pointer"
                 >
                   Learn More
                 </button>
@@ -137,10 +158,10 @@
             <code class="language-html">
               &lt;div class="flex flex-col bg-white border rounded-lg shadow-md mt-8">
                 &lt;div class="mx-4 -mt-8 rounded-lg overflow-hidden shadow-md">
-                  &lt;img class="block h-auto w-full" src="img-1.jpg" alt="Nebula Cloud" />
+                  &lt;img class="block h-auto w-full" src="" alt="" />
                 &lt;/div>
                 &lt;div class="p-5">
-                  &lt;h4 class="text-black font-bold">Nebula Cloud&lt;/h4>
+                  &lt;h4 class="text-black font-bold">Tailwind&lt;/h4>
                   &lt;p class="text-gray-700">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo tempora maxime
                     quidem excepturi.
@@ -148,21 +169,22 @@
                 &lt;/div>
               &lt;div class="px-5 pb-5">
                 &lt;button
-                  class="border font-bold bg-indigo-700 hover:bg-indigo-500 text-white rounded py-2 px-3 cursor-pointer"> Learn More&lt;/button>
+                  class="border font-bold bg-white hover:bg-gray-200 text-black rounded py-2 px-3 cursor-pointer"> Learn More&lt;/button>
                 &lt;/div>
               &lt;/div>
             </code>
           </pre>
           <!-- code preview ends-->
           <div class="w-full max-w-xs my-10">
+            <h3 class="text-2xl font-bold mb-5">Card Left Perspective (requires custom CSS)</h3>
             <div
-              class="flex flex-col bg-white border rounded-lg overflow-hidden shadow-md transform-3d-left"
+              class="flex flex-col bg-white border rounded-lg overflow-hidden shadow-md transform-perspective-left"
             >
               <div>
-                <img class="block h-auto w-100% rounded-lg" src="img-1.jpg" alt="Nebula Cloud" />
+                <img class="block h-auto w-100% rounded-lg" src="dist/img/img-1.jpg" alt="Orange Plane In The Sky" />
               </div>
               <div class="p-5">
-                <h4 class="text-black font-bold">Nebula Cloud</h4>
+                <h4 class="text-black font-bold">Tailwind</h4>
                 <p class="text-gray-700">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo tempora maxime
                   quidem excepturi.
@@ -170,7 +192,7 @@
               </div>
               <div class="px-5 pb-5">
                 <button
-                  class="border font-bold bg-indigo-700 hover:bg-indigo-500 text-white rounded py-2 px-3 cursor-pointer"
+                  class="border font-bold bg-accent text-black hover:bg-green-300 rounded py-2 px-3 cursor-pointer"
                 >
                   Learn More
                 </button>
@@ -180,19 +202,19 @@
           <!-- code preview start-->
           <pre>   
             <code class="language-html">
-              &lt;div class="flex flex-col bg-white border rounded-lg overflow-hidden shadow-md transform-3d-left">
+              &lt;div class="flex flex-col bg-white border rounded-lg overflow-hidden shadow-md transform-perspective-left">
                 &lt;div>
-                  &lt;img class="block h-auto w-100% rounded-lg" src="img-1.jpg" alt="Nebula Cloud" />
+                  &lt;img class="block h-auto w-100% rounded-lg" src="" alt="" />
                 &lt;/div>
                 &lt;div class="p-5">
-                  &lt;h4 class="text-black font-bold">Nebula Cloud &lt;/h4>
+                  &lt;h4 class="text-black font-bold">Tailwind&lt;/h4>
                   &lt;p class="text-gray-700">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo tempora maxime
                   quidem excepturi.
                   &lt;/p>
                 &lt;/div>
                 &lt;div class="px-5 pb-5">
-                  &lt;button class="border font-bold bg-indigo-700 hover:bg-indigo-500 text-white rounded py-2 px-3 cursor-pointer">Learn More &lt;/button>
+                  &lt;button class="border font-bold bg-white hover:bg-gray-200 text-black rounded py-2 px-3 cursor-pointer">Learn More &lt;/button>
                 &lt;/div>
               &lt;/div>
             </code>
@@ -200,19 +222,19 @@
           <!-- code preview ends-->
         </div>
       </div>
-      <div class="container mx-auto">
+      <div class="container">
         <h2 class="font-black py-5 text-4xl">Buttons</h2>
         <div class="w-full">
           <h3 class="mb-5 font-bold">Default button</h3>
           <button
-            class="border font-bold bg-indigo-700 hover:bg-indigo-500 text-white rounded py-2 px-3 cursor-pointer"
+            class="border font-bold bg-accent text-black hover:bg-green-300 rounded py-2 px-3 cursor-pointer"
           >
             Button
           </button>
           <!-- code preview start-->
           <pre>   
             <code class="language-html">
-                &lt;button class="border font-bold bg-indigo-700 hover:bg-indigo-500 text-white rounded py-2 px-3 cursor-pointer">Button&lt;/button>
+                &lt;button class="border font-bold bg-white hover:bg-gray-200 text-black rounded py-2 px-3 cursor-pointer">Button&lt;/button>
             </code>
           </pre>
           <!-- code preview ends-->
@@ -220,14 +242,14 @@
         <div class="w-full">
           <h3 class="my-5 font-bold">Medium button</h3>
           <button
-            class="border font-bold bg-indigo-700 hover:bg-indigo-500 text-white rounded py-3 px-4 cursor-pointer"
+            class="border font-bold bg-accent text-black hover:bg-green-300 rounded py-3 px-4 cursor-pointer"
           >
             Button
           </button>
           <!-- code preview start-->
           <pre>   
             <code class="language-html">
-               &lt;button class="border font-bold bg-indigo-700 hover:bg-indigo-500 text-white rounded py-3 px-4 cursor-pointer">Button &lt;/button>
+               &lt;button class="border font-bold bg-white hover:bg-gray-200 text-black rounded py-3 px-4 cursor-pointer">Button &lt;/button>
             </code>
           </pre>
           <!-- code preview ends-->
@@ -235,14 +257,14 @@
         <div class="w-full">
           <h3 class="my-5 font-bold">Large button</h3>
           <button
-            class="border font-bold bg-indigo-700 hover:bg-indigo-500 text-white rounded py-4 px-5 cursor-pointer"
+            class="border font-bold bg-accent text-black hover:bg-green-300 rounded py-4 px-5 cursor-pointer"
           >
             Button
           </button>
           <!-- code preview start-->
           <pre>   
             <code class="language-html">
-               &lt;button class="border font-bold bg-indigo-700 hover:bg-indigo-500 text-white rounded py-4 px-5 cursor-pointer">Button &lt;/button>
+               &lt;button class="border font-bold bg-white hover:bg-gray-200 text-black rounded py-4 px-5 cursor-pointer">Button &lt;/button>
             </code>
           </pre>
           <!-- code preview ends-->
@@ -250,17 +272,17 @@
         <div class="w-full">
           <h3 class="my-5 font-bold">Icon button</h3>
           <button
-            class="flex items-center bg-indigo-700 text-white border font-bold text-black rounded py-2 px-3 cursor-pointer hover:bg-indigo-600"
+            class="flex items-center bg-accent text-black hover:bg-green-300 border font-bold rounded py-2 px-3 cursor-pointer"
           >
             Button
             <span class="flex items-center ml-2">
-              <box-icon name="cube" color="white"></box-icon>
+              <box-icon name="cube"></box-icon>
             </span>
           </button>
           <!-- code preview start-->
           <pre>   
             <code class="language-html">
-                &lt;button class="flex items-center bg-indigo-700 text-white border font-bold text-black rounded py-2 px-3 cursor-pointer hover:bg-indigo-600">
+                &lt;button class="flex items-center bg-white hover:bg-gray-200 text-black border font-bold rounded py-2 px-3 cursor-pointer hover:bg-indigo-600">
                 Button
                 &lt;span class="flex items-center ml-2">Icon Here&lt;/span>
             </code>
@@ -268,7 +290,7 @@
           <!-- code preview ends-->
         </div>
       </div>
-      <div class="container mx-auto">
+      <div class="container">
         <h2 class="font-black py-5 text-4xl">Inputs</h2>
         <div class="w-full">
           <h3 class="my-5 font-bold">Input</h3>
@@ -290,14 +312,14 @@
             class="flex items-stretch flex-no-wrap w-full relative border bg-white rounded shadow max-w-xs"
           >
             <input class="w-full pl-3 py-3" placeholder="Enter Text" />
-            <button class="bg-gray-200 hover:bg-gray-200 p-2">Submit</button>
+            <button class="bg-accent text-black hover:bg-green-300 p-2 rounded">Submit</button>
           </div>
           <!-- code preview start-->
           <pre>   
             <code class="language-html">
               &lt;div class="flex items-stretch flex-no-wrap w-full relative border bg-white rounded shadow">
                 &lt;input class="w-full pl-3 py-3" placeholder="Enter Text" />
-                &lt;button class="bg-gray-200 hover:bg-gray-200 p-2">Submit&lt;/button>
+                &lt;button class="bg-gray-200 hover:bg-gray-200 p-2 rounded">Submit&lt;/button>
               &lt;/div>
             </code>
           </pre>
@@ -322,7 +344,7 @@
         </div>
         <div class="w-1/3"></div>
       </div>
-      <div class="container mx-auto">
+      <div class="container">
         <h2 class="font-black py-5 text-4xl">Selector</h2>
         <div class="flex flex-wrap">
           <div class="w-full">
@@ -332,8 +354,8 @@
                 class="block appearance-none w-full bg-white border py-3 px-3 pr-8 rounded cursor-pointer hover:bg-gray-100 focus:bg-gray-100 focus:border-gray-50 overflow-hidden"
               >
                 <option value="">Select an option</option>
-                <option value="Nebula">Nebula</option>
-                <option value="Nebula">Nebula</option>
+                <option value="Tailwind">Tailwind</option>
+                <option value="Tailwind">Tailwind</option>
               </select>
               <div
                 class="pointer-events-none absolute inset-y-0 right-0 pr-3 flex items-center text-gray-700"
@@ -356,8 +378,8 @@
                 &lt;div class="inline-block relative">
                   &lt;select class="block appearance-none w-full bg-white border py-3 px-3 pr-8 rounded cursor-pointer hover:bg-gray-100 focus:bg-gray-100 focus:border-gray-50 overflow-hidden">
                     &lt;option value="">Select an option&lt;/option>
-                    &lt;option value="Nebula">Nebula&lt;/option>
-                    &lt;option value="Nebula">Nebula&lt;/option>
+                    &lt;option value="Tailwind">Tailwind&lt;/option>
+                    &lt;option value="Tailwind">Tailwind&lt;/option>
                   &lt;/select>
                   &lt;div class="pointer-events-none absolute inset-y-0 right-0 pr-3 flex items-center text-gray-700">
                     &lt;svg xmlns="http://www.w3.org/2000/svg" width="11" height="5.3" overflow="scroll">&lt;path d="M1 1l4.3 3.2c.1.1.3.1.5 0L10 1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10"/> &lt;/svg>
@@ -369,7 +391,7 @@
           </div>
         </div>
       </div>
-      <div class="container mx-auto">
+      <div class="container">
         <h2 class="font-black py-5 text-4xl">12 Grid System</h2>
         <div class="w-full">
           <h3 class="font-black py-2">4 Column Gird</h3>
@@ -438,18 +460,18 @@
           <!-- code preview ends-->
         </div>
       </div>
-      <div class="container mx-auto">
+      <div class="container">
         <h2 class="font-black py-5 text-4xl">Badges/Pills</h2>
         <div class="flex flex-wrap">
           <div class="w-full">
             <span
-              class="flex items-center justify-center bg-indigo-500 font-bold text-white w-24 p-1 rounded"
+              class="flex items-center justify-center bg-accent text-black font-bold w-24 p-1 rounded"
               >Badge
             </span>
             <!-- code preview start-->
             <pre>   
             <code class="language-html">
-              &lt;span class="flex items-center justify-center bg-indigo-500 font-bold text-white w-24 p-1 rounded"&gt;Badge&lt;/span&gt;
+              &lt;span class="flex items-center justify-center bg-white font-bold text-black hv w-24 p-1 rounded"&gt;Badge&lt;/span&gt;
             </code>
           </pre>
             <!-- code preview ends-->
@@ -457,7 +479,7 @@
           <div class="w-full">
             <a
               href="#"
-              class="flex items-center justify-center bg-indigo-500 font-bold text-white w-24 p-1 cursor-pointer rounded"
+              class="flex items-center justify-center bg-accent text-black hover:bg-green-300 font-bold w-24 p-1 cursor-pointer rounded"
               >Link</a
             >
             <!-- code preview start-->
@@ -470,7 +492,7 @@
           </div>
           <div class="w-full">
             <span
-              class="flex items-center justify-center bg-indigo-500 font-bold text-white rounded-full w-24 p-1"
+              class="flex items-center justify-center bg-accent text-black font-bold rounded-full w-24 p-1"
               >Pill</span
             >
             <!-- code preview start-->
@@ -484,7 +506,7 @@
           <div class="w-full">
             <a
               href="#"
-              class="flex items-center justify-center bg-indigo-500 font-bold text-white rounded-full w-24 p-1 cursor-pointer"
+              class="flex items-center justify-center bg-accent text-black hover:bg-green-300 font-bold rounded-full w-24 p-1 cursor-pointer"
               >Link</a
             >
             <!-- code preview start-->
@@ -500,11 +522,11 @@
       <div class="container">
         <h2 class="font-black py-5 text-4xl">Hero Sections</h2>
         <div class="flex">
-          <div class="w-screen bg-indigo-700">
+          <div class="w-screen bg-accent">
             <div class="flex">
               <div class="w-full flex flex-col justify-center items-center h-64">
-                <h1 class="text-white text-5xl mb-3">Nebula Components</h1>
-                <p class="inline-block text-gray-200 max-w-md text-center">
+                <h1 class="text-black text-5xl mb-3">Tailwind Components</h1>
+                <p class="inline-block text-gray-900 max-w-md text-center">
                   Components made for your next Tailwind project. Get a quick baseline to work from
                   and apply your own styling them to.
                 </p>
@@ -520,7 +542,7 @@
             &lt;div class="w-screen bg-indigo-700"&gt;
               &lt;div class="flex"&gt;
                 &lt;div class="w-full flex flex-col justify-center items-center h-64"&gt;
-                  &lt;h1 class="text-white text-5xl mb-3">Nebula Components&lt;/h1&gt;
+                  &lt;h1 class="text-white text-5xl mb-3">Tailwind Components&lt;/h1&gt;
                   &lt;p class="inline-block text-gray-200 max-w-md text-center"&gt;
                     Components made for your next Tailwind project. Get a quick baseline to work from
                     and apply your own styling them to.
@@ -534,13 +556,13 @@
       <!-- code preview ends-->
       <div class="container">
         <div class="flex mt-5">
-          <div class="w-screen bg-indigo-700">
+          <div class="w-screen bg-accent">
             <div class="flex flex-wrap">
               <div class="w-1/2">
                 <div class="w-full flex flex-col justify-center items-center h-full">
                   <div class="flex flex-col p-5 max-w-sm">
-                    <h1 class="text-white text-5xl mb-3">Nebula Components</h1>
-                    <p class="inline-block text-gray-200 leading-relaxed">
+                    <h1 class="text-black text-5xl mb-3">Tailwind Components</h1>
+                    <p class="inline-block text-gray-900 leading-relaxed">
                       Components made for your next Tailwind project. Get a quick baseline to work
                       from and apply your own styling them to.
                     </p>
@@ -549,7 +571,7 @@
               </div>
               <div class="w-1/2">
                 <div class="w-full flex flex-col justify-center items-center h-full">
-                  <img src="/To-The-Stars.svg" alt="" />
+                  <img src="dist/img/To-The-Stars.svg" alt="illustration of rocket launching" />
                 </div>
               </div>
             </div>
@@ -563,8 +585,8 @@
             &lt;div class="flex flex-wrap"&gt;
               &lt;div class="w-1/2"&gt;
                 &lt;div class="w-full flex flex-col justify-center items-center h-full"&gt;
-                  &lt;div class="flex flex-col p-5 max-w-sm"&lt;
-                    &lt;h1 class="text-white text-5xl mb-3">Nebula Components&lt;/h1&gt;
+                  &lt;div class="flex flex-col p-5 max-w-sm"&gt;
+                    &lt;h1 class="text-white text-5xl mb-3">Tailwind Components&lt;/h1&gt;
                     &lt;p class="inline-block text-gray-200 leading-relaxed"&gt;
                       Components made for your next Tailwind project. Get a quick baseline to work
                       from and apply your own styling them to.
@@ -574,7 +596,7 @@
               &lt;/div&gt;
               &lt;div class="w-1/2"&gt;
                 &lt;div class="w-full flex flex-col justify-center items-center h-full"&gt;
-                  &lt;img src="/To-The-Stars.svg" alt="" /&gt;
+                  &lt;img src="" alt="" /&gt;
                 &lt;/div&gt;
               &lt;/div&gt;
             &lt;/div&gt;
@@ -582,7 +604,7 @@
         </pre>
       </div>
       <!-- code preview ends-->
-      <div class="container mx-auto">
+      <div class="container">
         <h2 class="font-black py-5 text-4xl">Table</h2>
         <div class="flex">
           <div class="w-full">
@@ -651,27 +673,27 @@
         </pre>
       </div>
       <!-- code preview ends-->
-      <div class="container mx-auto">
+      <div class="container">
         <h2 class="font-black py-5 text-4xl">List</h2>
         <div class="flex flex-wrap">
           <div class="w-full">
             <h3 class="font-bold font-black">Unordered List:</h3>
             <ul>
-              <li class="py-3">Nebula</li>
-              <li class="pb-3">Nebula</li>
-              <li class="pb-3">Nebula</li>
-              <li class="pb-3">Nebula</li>
-              <li class="pb-3">Nebula</li>
+              <li class="py-3">Tailwind</li>
+              <li class="pb-3">Tailwind</li>
+              <li class="pb-3">Tailwind</li>
+              <li class="pb-3">Tailwind</li>
+              <li class="pb-3">Tailwind</li>
             </ul>
             <!-- code preview start-->
             <pre>   
               <code class="language-html">
                 &lt;ul&gt;
-                  &lt;li class="py-3"&gt;Nebula&lt;/li&gt;
-                  &lt;li class="pb-3"&gt;Nebula&lt;/li&gt;
-                  &lt;li class="pb-3"&gt;Nebula&lt;/li&gt;
-                  &lt;li class="pb-3"&gt;Nebula&lt;/li&gt;
-                  &lt;li class="pb-3"&gt;Nebula&lt;/li&gt;
+                  &lt;li class="py-3"&gt;Tailwind&lt;/li&gt;
+                  &lt;li class="pb-3"&gt;Tailwind&lt;/li&gt;
+                  &lt;li class="pb-3"&gt;Tailwind&lt;/li&gt;
+                  &lt;li class="pb-3"&gt;Tailwind&lt;/li&gt;
+                  &lt;li class="pb-3"&gt;Tailwind&lt;/li&gt;
                 &lt;/ul&gt;
               </code>
             </pre>
@@ -686,7 +708,7 @@
               <li class="py-3">Tail Components</li>
               <li class="py-3">Tail Components</li>
             </ol>
-             <!-- code preview start-->
+            <!-- code preview start-->
             <pre>   
               <code class="language-html">
                 &lt;ol class="list-decimal pl-4"&gt;
@@ -702,7 +724,7 @@
           </div>
         </div>
       </div>
-      <div class="container mx-auto">
+      <div class="container">
         <h2 class="font-black py-5 text-4xl">Accordion</h2>
         <div class="flex flex-wrap">
           <div class="w-full">
@@ -710,13 +732,13 @@
               Details element is only supported in modern browsers!
             </h3>
             <a
-              class="font-bold text-indigo-700"
+              class="font-bold text-black hover:text-gray-500"
               href="https://github.com/javan/details-element-polyfill"
               >Polyfill For IE</a
             >
             <div class="my-5"></div>
             <details class="bg-white border shadow-lg rounded">
-              <summary class="p-3 border-b cursor-pointer hover:bg-gray-100">Tailwind</summary>
+              <summary class="p-5 border-b cursor-pointer hover:bg-gray-100">Tailwind</summary>
               <p class="py-5 pl-5">
                 Tailwind CSS is a highly customizable, low-level CSS framework that gives you all of
                 the building blocks you need to build bespoke designs without any annoying
@@ -740,19 +762,27 @@
         </pre>
       </div>
       <!-- code preview ends-->
-      <div class="container mx-auto">
+      <div class="container">
         <h2 class="font-black py-5 text-4xl">Navbar</h2>
+        <h3 class="font-black py-3 text-2xl">Navigation bar Static:</h3>
         <nav class="w-full justify-between">
-          <div class="flex items-center max-w-5xl mx-auto shadow rounded p-5">
+          <div class="flex items-center max-w-5xl mx-auto p-5 border rounded">
             <div class="flex-1">
-              <img class="h-10 w-auto" src="logo.svg" alt="" />
+              <img class="h-10 w-auto" src="dist/img/logo.svg" alt="logo" />
             </div>
             <ul class="list-none flex">
-              <li class="mr-4">nav 1</li>
-              <li class="mr-4">nav 2</li>
-              <li class="mr-4">nav 3</li>
-              <li class="mr-4">nav 4</li>
-              <li class=""></li>
+              <li class="mr-4">
+                <a class="font-bold cursor-pointer hover:text-gray-700" href="#">nav 1</a>
+              </li>
+              <li class="mr-4">
+                <a class="font-bold cursor-pointer hover:text-gray-700" href="#">nav 2</a>
+              </li>
+              <li class="mr-4">
+                <a class="font-bold cursor-pointer hover:text-gray-700" href="#">nav 3</a>
+              </li>
+              <li class="mr-4">
+                <a class="font-bold cursor-pointer hover:text-gray-700" href="#">nav 4</a>
+              </li>
             </ul>
           </div>
         </nav>
@@ -761,25 +791,109 @@
       <div class="container">
         <pre>   
           <code class="language-html">
-            &lt;nav class="w-full justify-between"&gt;
-              &lt;div class="flex items-center max-w-5xl mx-auto shadow rounded p-5"&gt;
-                &lt;div class="flex-1"&gt;
-                  &lt;img class="h-10 w-auto" src="logo.svg" alt="" /&gt;
-                &lt;/div&gt;
+            &lt;nav class="w-full justify-between bg-white shadow">
+              &lt;div class="flex items-center max-w-5xl mx-auto p-5">
+                &lt;div class="flex-1">&lt;img class="h-10 w-auto" src="" alt="logo" />&lt;/div>
                 &lt;ul class="list-none flex">
-                  &lt;li class="mr-4">nav 1&lt/li&gt;
-                  &lt;li class="mr-4">nav 2&lt/li&gt;
-                  &lt;li class="mr-4">nav 3&lt/li&gt;
-                  &lt;li class="mr-4">nav 4&lt/li&gt;
-                &lt;/ul&gt;
-              &lt;/div&gt;
-            &lt;/nav&gt;
+                  &lt;li class="mr-4">&lt;a class="font-bold cursor-pointer hover:text-gray-700" href="#">nav 1&lt;/a>&lt;/li>
+                  &lt;li class="mr-4">&lt;a class="font-bold cursor-pointer hover:text-gray-700" href="#">nav 2&lt;/a>&lt;/li>
+                  &lt;li class="mr-4">&lt;a class="font-bold cursor-pointer hover:text-gray-700" href="#">nav 3&lt;/a>&lt;/li>
+                  &lt;li class="mr-4">&lt;a class="font-bold cursor-pointer hover:text-gray-700" href="#">nav 4&lt;/a>&lt;/li>
+                &lt;/ul>
+              &lt;/div>
+            &lt;/nav>
           </code>
         </pre>
       </div>
       <!-- code preview ends-->
+      <div class="container">
+        <h3 class="font-black py-3 text-2xl">Navigation Bar Fixed:</h3>
+        <nav class="w-full justify-between">
+          <div class="flex items-center max-w-5xl mx-auto p-5 border rounded">
+            <div class="flex-1">
+              <img class="h-10 w-auto" src="dist/img/logo.svg" alt="logo" />
+            </div>
+            <ul class="list-none flex">
+              <li class="mr-4">
+                <a class="font-bold cursor-pointer hover:text-gray-700" href="#">nav 1</a>
+              </li>
+              <li class="mr-4">
+                <a class="font-bold cursor-pointer hover:text-gray-700" href="#">nav 2</a>
+              </li>
+              <li class="mr-4">
+                <a class="font-bold cursor-pointer hover:text-gray-700" href="#">nav 3</a>
+              </li>
+              <li class="mr-4">
+                <a class="font-bold cursor-pointer hover:text-gray-700" href="#">nav 4</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- code preview start-->
+      <div class="container">
+        <pre>   
+            <code class="language-html">
+              &lt;nav class="w-full justify-between fixed bg-white shadow">
+                &lt;div class="flex items-center max-w-5xl mx-auto p-5">
+                  &lt;div class="flex-1">&lt;img class="h-10 w-auto" src="" alt="logo" />&lt;/div>
+                  &lt;ul class="list-none flex">
+                    &lt;li class="mr-4">&lt;a class="font-bold cursor-pointer hover:text-gray-700" href="#">nav 1&lt;/a>&lt;/li>
+                    &lt;li class="mr-4">&lt;a class="font-bold cursor-pointer hover:text-gray-700" href="#">nav 2&lt;/a>&lt;/li>
+                    &lt;li class="mr-4">&lt;a class="font-bold cursor-pointer hover:text-gray-700" href="#">nav 3&lt;/a>&lt;/li>
+                    &lt;li class="mr-4">&lt;a class="font-bold cursor-pointer hover:text-gray-700" href="#">nav 4&lt;/a>&lt;/li>
+                  &lt;/ul>
+                &lt;/div>
+              &lt;/nav>
+            </code>
+          </pre>
+      </div>
+      <!-- code preview ends-->
+      <div class="container">
+        <h2 class="font-black py-5 text-4xl">Alerts</h2>
+        <h3 class="font-black py-2">Notification alert:</h3>
+        <div class="flex items-center rounded bg-accent px-5 py-6">
+          Hello i'm a notification. Please read the follwing messages
+        </div>
+        <pre>   
+          <code class="language-html">
+            &ltdiv class="flex items-center rounded bg-green-400 px-5 py-6">
+              Hello i'm a notification. Please read the follwing messages
+            &lt/div>
+          </code>
+        </pre>
+        <h3 class="font-black py-2">Warning alert:</h3>
+        <div class="flex items-center rounded bg-orange-400 px-5 py-6">
+          Hello i'm a notification. Please read the follwing messages
+        </div>
+        <pre>   
+            <code class="language-html">
+              &lt;div class="flex items-center rounded bg-orange-400 px-5 py-6">
+                Hello i'm a notification. Please read the follwing messages
+              &lt;/div>
+            </code>
+          </pre>
+        <h3 class="font-black py-2">Danger alert:</h3>
+        <div class="flex items-center rounded bg-red-600 px-5 py-6">
+          Hello i'm a notification. Please read the follwing messages
+        </div>
+        <pre>   
+          <code class="language-html">
+            &lt;div class="flex items-center rounded bg-red-600 px-5 py-6">
+              Hello i'm a notification. Please read the follwing messages
+            &lt;/div>
+          </code>
+        </pre>
+      </div>
+      <div class="container">
+        <h2 class="font-bold text-4xl py-5">Still More To Come!</h2>
+        <div class="flex mb-5"> 
+          <h3 class="font-bold text-2xl mb-2">Submit suggestions or any issues:</h3>
+          <a class="flex items-center justify-center bg-indigo-500 font-bold text-white w-24 p-1 ml-2 cursor-pointer rounded" href="https://github.com/rexdesigndk/Tail-Components/issues">Submit</a>
+        </div>
+      </div>
     </main>
     <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
-    <script src="dist/js/app.js"></script>
+    <script src="dist/js/dist.js"></script>
   </body>
 </html>
