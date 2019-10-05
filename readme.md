@@ -14,10 +14,9 @@ Simply copy paste the code over to your project. The showcase website makes it e
 
 ## Todo
 
-1. Add footer designs
-2. More card designs (horizontal)
-3. Custom checkbox/radio input
-4. Make website fully mobile responsive
+**1.** Add footer designs
+**2.** More card designs (horizontal)
+**3.** Custom checkbox/radio input
 
 I welcome any feedback or suggestions. 
 
@@ -27,4 +26,4 @@ This project is licensed under the MIT License.
 
 ## Acknowledgments
 
-* Thanks to Adam Wathan for his amazing work.
+Thanks to Adam Wathan for his amazing work.
