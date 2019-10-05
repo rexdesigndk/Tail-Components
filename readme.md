@@ -2,7 +2,7 @@
 
 Components made based on default Tailwind. Get a quick baseline for your next Tailwind project.
 
-[Showcase:](https://rexdesigndk.github.io/Tail-Components/)
+[Showcase](https://rexdesigndk.github.io/Tail-Components/)
 
 ## 
 
@@ -14,10 +14,10 @@ Simply copy paste the code over to your project. The showcase website makes it e
 
 ## Todo
 
-* Custom checkbox/radio input
-* More card designs (horizontal)
-* Add footer designs
-* Make website fully mobile responsive
+1. Add footer designs
+2. More card designs (horizontal)
+3. Custom checkbox/radio input
+4. Make website fully mobile responsive
 
 I welcome any feedback or suggestions. 
 

@@ -4,9 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Components made for your next tailwind project">
     <title>Tail Components</title>
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="//fonts.gstatic.com/" crossorigin />
+    <link rel="preconnect" href="https://unpkg.com" crossorigin />
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="dist/css/main.css" />
     <link rel="stylesheet" href="src/css/prism.css" />
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet" />
   </head>
   <body>
@@ -22,7 +28,7 @@
             </li>
             <li class="mr-4 flex items-center">
               <p class="mr-2 font-bold">View Source:</p>
-              <a href="https://github.com/rexdesigndk/Tail-Components" target="_blank"
+              <a class="cursor-pointer hover:text-gray-900" href="https://github.com/rexdesigndk/Tail-Components" target="_blank" aria-label="link to tail's github page"
                 ><box-icon type="logo" name="github"></box-icon
               ></a>
             </li>
@@ -103,7 +109,7 @@
               </div>
               <div class="px-5 pb-5">
                 <button
-                  class="border font-bold bg-accent text-black hover:bg-gray-500 rounded py-2 px-3 cursor-pointer"
+                  class="border font-bold bg-accent text-black hover:bg-green-300 rounded py-2 px-3 cursor-pointer"
                 >
                   Learn More
                 </button>
@@ -294,14 +300,14 @@
         <h2 class="font-black py-5 text-4xl">Inputs</h2>
         <div class="w-full">
           <h3 class="my-5 font-bold">Input</h3>
-          <input
+          <input type="text" aria-label="input field"
             class="flex items-center border p-3 rounded bg-white shadow"
             placeholder="Enter Text"
           />
           <!-- code preview start-->
           <pre>   
             <code class="language-html">
-                &lt;input class="flex items-center border p-3 rounded bg-white shadow" placeholder="Enter Text"/>
+                &lt;input type="text" aria-label="" class="flex items-center border p-3 rounded bg-white shadow" placeholder="Enter Text"/>
             </code>
           </pre>
           <!-- code preview ends-->
@@ -311,14 +317,14 @@
           <div
             class="flex items-stretch flex-no-wrap w-full relative border bg-white rounded shadow max-w-xs"
           >
-            <input class="w-full pl-3 py-3" placeholder="Enter Text" />
+            <input type="text" aria-label="input field" class="w-full pl-3 py-3" placeholder="Enter Text" />
             <button class="bg-accent text-black hover:bg-green-300 p-2 rounded">Submit</button>
           </div>
           <!-- code preview start-->
           <pre>   
             <code class="language-html">
               &lt;div class="flex items-stretch flex-no-wrap w-full relative border bg-white rounded shadow">
-                &lt;input class="w-full pl-3 py-3" placeholder="Enter Text" />
+                &lt;input type="text" aria-label="" class="w-full pl-3 py-3" placeholder="Enter Text" />
                 &lt;button class="bg-gray-200 hover:bg-gray-200 p-2 rounded">Submit&lt;/button>
               &lt;/div>
             </code>
@@ -327,7 +333,7 @@
         </div>
         <div class="w-full">
           <h3 class="my-5 font-bold">Textarea</h3>
-          <textarea
+          <textarea type="text" aria-label="textarea"
             class="flex items-center border p-3 rounded bg-white shadow"
             name=""
             id=""
@@ -350,12 +356,13 @@
           <div class="w-full">
             <h3 class="font-bold font-black mb-5">Single Selector:</h3>
             <div class="inline-block relative">
-              <select
+              <select 
                 class="block appearance-none w-full bg-white border py-3 px-3 pr-8 rounded cursor-pointer hover:bg-gray-100 focus:bg-gray-100 focus:border-gray-50 overflow-hidden"
-              >
+                aria-label="select a css framework"
+                >
                 <option value="">Select an option</option>
                 <option value="Tailwind">Tailwind</option>
-                <option value="Tailwind">Tailwind</option>
+                <option value="Tailwind">Bootstrap</option>
               </select>
               <div
                 class="pointer-events-none absolute inset-y-0 right-0 pr-3 flex items-center text-gray-700"
@@ -376,7 +383,7 @@
             <pre>   
               <code class="language-html">
                 &lt;div class="inline-block relative">
-                  &lt;select class="block appearance-none w-full bg-white border py-3 px-3 pr-8 rounded cursor-pointer hover:bg-gray-100 focus:bg-gray-100 focus:border-gray-50 overflow-hidden">
+                  &lt;select class="block appearance-none w-full bg-white border py-3 px-3 pr-8 rounded cursor-pointer hover:bg-gray-100 focus:bg-gray-100 focus:border-gray-50 overflow-hidden" aria-label="select a css framework">
                     &lt;option value="">Select an option&lt;/option>
                     &lt;option value="Tailwind">Tailwind&lt;/option>
                     &lt;option value="Tailwind">Tailwind&lt;/option>
@@ -524,7 +531,7 @@
         <div class="flex">
           <div class="w-screen bg-accent">
             <div class="flex">
-              <div class="w-full flex flex-col justify-center items-center h-64">
+              <div class="w-full flex flex-col justify-center items-center p-32">
                 <h1 class="text-black text-5xl mb-3">Tailwind Components</h1>
                 <p class="inline-block text-gray-900 max-w-md text-center">
                   Components made for your next Tailwind project. Get a quick baseline to work from
@@ -541,7 +548,7 @@
           <code class="language-html">
             &lt;div class="w-screen bg-indigo-700"&gt;
               &lt;div class="flex"&gt;
-                &lt;div class="w-full flex flex-col justify-center items-center h-64"&gt;
+                &lt;div class="w-full flex flex-col justify-center items-center p-32"&gt;
                   &lt;h1 class="text-white text-5xl mb-3">Tailwind Components&lt;/h1&gt;
                   &lt;p class="inline-block text-gray-200 max-w-md text-center"&gt;
                     Components made for your next Tailwind project. Get a quick baseline to work from
@@ -559,7 +566,7 @@
           <div class="w-screen bg-accent">
             <div class="flex flex-wrap">
               <div class="w-1/2">
-                <div class="w-full flex flex-col justify-center items-center h-full">
+                <div class="w-full flex flex-col justify-center items-center p-32">
                   <div class="flex flex-col p-5 max-w-sm">
                     <h1 class="text-black text-5xl mb-3">Tailwind Components</h1>
                     <p class="inline-block text-gray-900 leading-relaxed">
@@ -584,7 +591,7 @@
           <code class="language-html">
             &lt;div class="flex flex-wrap"&gt;
               &lt;div class="w-1/2"&gt;
-                &lt;div class="w-full flex flex-col justify-center items-center h-full"&gt;
+                &lt;div class="w-full flex flex-col justify-center items-center p-32"&gt;
                   &lt;div class="flex flex-col p-5 max-w-sm"&gt;
                     &lt;h1 class="text-white text-5xl mb-3">Tailwind Components&lt;/h1&gt;
                     &lt;p class="inline-block text-gray-200 leading-relaxed"&gt;
@@ -889,7 +896,7 @@
         <h2 class="font-bold text-4xl py-5">Still More To Come!</h2>
         <div class="flex mb-5"> 
           <h3 class="font-bold text-2xl mb-2">Submit suggestions or any issues:</h3>
-          <a class="flex items-center justify-center bg-indigo-500 font-bold text-white w-24 p-1 ml-2 cursor-pointer rounded" href="https://github.com/rexdesigndk/Tail-Components/issues">Submit</a>
+          <a class="flex items-center justify-center bg-accent hover:bg-green-400 font-bold text-black w-24 p-1 ml-2 cursor-pointer rounded" href="https://github.com/rexdesigndk/Tail-Components/issues" aria-label="link to tail's github issues">Submit</a>
         </div>
       </div>
     </main>
