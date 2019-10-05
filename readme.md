@@ -14,9 +14,9 @@ Simply copy paste the code over to your project. The showcase website makes it e
 
 ## Todo
 
-**1.** Add footer designs
-**2.** More card designs (horizontal)
-**3.** Custom checkbox/radio input
+**1.** Add footer designs   
+**2.** More card designs (horizontal)   
+**3.** Custom checkbox/radio input   
 
 I welcome any feedback or suggestions. 
 
