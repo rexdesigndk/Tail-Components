@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="Description" content="Components made for your next tailwind project">
+    <meta name="Description" content="Components made for your next tailwind project" />
     <title>Tail Components</title>
     <!-- Preconnect to Google Fonts -->
-    <link rel="preconnect" href="//fonts.gstatic.com/" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <link rel="preconnect" href="https://unpkg.com" crossorigin />
     <!-- Stylesheets -->
     <link rel="stylesheet" href="dist/css/main.css" />
@@ -15,12 +15,12 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet" />
     <!-- favicons -->
-    <link rel="shortcut icon" href="dist/img/favicon.png" type="image/x-icon">
-    <link rel="icon" href="dist/img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="dist/img/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="dist/img/favicon.png" type="image/x-icon" />
   </head>
   <body>
     <header>
-      <nav class="w-full bg-white shadow">
+      <nav class="w-full bg-white shadow z-10">
         <div class="flex justify-between items-center max-w-5xl mx-auto p-5">
           <div class="flex-initial">
             <img class="h-10 w-auto" src="dist/img/logo.svg" alt="logo" />
@@ -31,61 +31,80 @@
             </li>
             <li class="mr-4 flex items-center">
               <p class="mr-2 font-bold">View Source:</p>
-              <a class="cursor-pointer hover:text-gray-900" href="https://github.com/rexdesigndk/Tail-Components" target="_blank" aria-label="link to tail's github page"
+              <a
+                class="cursor-pointer hover:text-gray-900"
+                href="https://github.com/rexdesigndk/Tail-Components"
+                target="_blank"
+                aria-label="link to tail's github page"
                 ><box-icon type="logo" name="github"></box-icon
               ></a>
             </li>
           </ul>
         </div>
       </nav>
-      <div class="w-full">
-        <div class="flex flex-wrap">
-          <div class="w-full flex flex-col justify-center items-center p-32 bg-accent">
-            <h1 class="text-black text-5xl mb-3">Do less designing, do more work</h1>
-            <p class="inline-block text-gray-900 max-w-md text-center">
-              Components made for your next Tailwind project. Get a quick baseline to work from and
-              apply your own styling them to.
-            </p>
+      <div class="w-full bg-accent">
+        <div class="container mx-auto">
+          <div class="flex">
+            <div class="w-1/2">
+              <div class="w-full flex flex-col justify-center items-center py-32">
+                <div class="flex flex-col p-5 max-w-md">
+                  <h1 class="text-black text-6xl mb-3">Tailwind UI Components</h1>
+                  <p class="inline-block text-lg text-gray-800 leading-relaxed">
+                    Components made for your next Tailwind project. Get a quick baseline to work
+                    from and apply your own styling them to.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="w-1/2">
+              <div class="w-full flex flex-col justify-center items-center h-full">
+                <img
+                  class="max-w-xl"
+                  src="/dist/img/designer.svg"
+                  alt="illustration of a designer"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </header>
-    <main class="max-w-4xl mx-auto">
+    <main class="max-w-5xl mx-auto">
       <div class="container mx-auto">
-        <h2 class="font-black py-5 text-4xl">Text</h2>
-        <h1 class="text-5xl font-bold">Heading 1</h1>
+        <h2 class="text-4xl font-bold text-black py-5 ">Text</h2>
+        <h1 class="text-6xl font-bold text-black">Heading 1</h1>
         <!-- code preview start-->
         <pre>   
           <code class="language-html">
-            &lt;h1 class="text-5xl font-bold">Heading 1&lt;/h1>
+            &lt;h1 class="text-6xl font-bold text-black">Heading 1&lt;/h1>
           </code>
         </pre>
         <!-- code preview ends-->
-        <h2 class="text-4xl font-bold">Heading 2</h2>
+        <h2 class="text-4xl font-bold text-black">Heading 2</h2>
         <!-- code preview start-->
         <pre>   
           <code class="language-html">
-            &lt;h2 class="text-4xl font-bold">Heading 2&lt;/h2>
+            &lt;h2 class="text-4xl font-bold text-black">Heading 2&lt;/h2>
           </code>
         </pre>
         <!-- code preview ends-->
-        <h3 class="text-2xl font-bold">Heading 3</h3>
+        <h3 class="text-2xl font-bold text-black">Heading 3</h3>
         <!-- code preview start-->
         <pre>   
           <code class="language-html">
-            &lt;h3 class="text-2xl font-bold">Heading 3&lt;/h3>
+            &lt;h3 class="text-2xl font-bold text-black">Heading 3&lt;/h3>
           </code>
         </pre>
         <!-- code preview ends-->
-        <h4 class="font-bold">Heading 4</h4>
+        <h4 class="font-bold text-black">Heading 4</h4>
         <!-- code preview start-->
         <pre>   
           <code class="language-html">
-            &lt;h4 class="font-bold">Heading 4&lt;/h4>
+            &lt;h4 class="font-bold text-black">Heading 4&lt;/h4>
           </code>
         </pre>
         <!-- code preview ends-->
-        <a class="font-bold cursor-pointer text-black hover:text-gray-600" href="#">Am a link!</a>
+        <a class="font-bold text-black hover:text-gray-600 cursor-pointer" href="#">Am a link!</a>
         <!-- code preview start-->
         <pre>   
           <code class="language-html">
@@ -95,13 +114,17 @@
         <!-- code preview ends-->
       </div>
       <div class="container">
-        <h2 class="font-black py-5 text-4xl">Cards</h2>
-        <h3 class="text-2xl font-bold">Default Card</h3>
+        <h2 class="text-4xl font-bold text-black py-5">Cards</h2>
+        <h3 class="text-2xl mb-5 font-bold">Default Card</h3>
         <div class="flex flex-wrap">
           <div class="w-full max-w-xs">
             <div class="flex flex-col bg-white border rounded-lg shadow-md">
               <div>
-                <img class="block h-auto w-100% rounded-lg" src="dist/img/img-1.jpg" alt="Orange Plane In The Sky" />
+                <img
+                  class="block h-auto w-100% rounded-lg"
+                  src="dist/img/img-1.jpg"
+                  alt="Orange Plane In The Sky"
+                />
               </div>
               <div class="p-5">
                 <h4 class="text-black font-bold">Tailwind</h4>
@@ -141,10 +164,14 @@
           </pre>
           <!-- code preview ends-->
           <div class="w-full max-w-xs">
-            <h3 class="text-2xl font-bold">Card Design 2</h3>
+            <h3 class="text-2xl font-bold mb-16 mt-5">Card Design 2</h3>
             <div class="flex flex-col bg-white border rounded-lg shadow-md mt-8">
               <div class="mx-4 -mt-8 rounded-lg overflow-hidden shadow-md">
-                <img class="block h-auto w-full" src="dist/img/img-1.jpg" alt="Orange Plane In The Sky" />
+                <img
+                  class="block h-auto w-full"
+                  src="dist/img/img-1.jpg"
+                  alt="Orange Plane In The Sky"
+                />
               </div>
               <div class="p-5">
                 <h4 class="text-black font-bold">Tailwind</h4>
@@ -185,12 +212,18 @@
           </pre>
           <!-- code preview ends-->
           <div class="w-full max-w-xs my-10">
-            <h3 class="text-2xl font-bold mb-5">Card Left Perspective (requires custom CSS)</h3>
+            <h3 class="text-2xl font-bold mb-5">
+              Card Left Perspective (Requires Custom Utility Class)
+            </h3>
             <div
               class="flex flex-col bg-white border rounded-lg overflow-hidden shadow-md transform-perspective-left"
             >
               <div>
-                <img class="block h-auto w-100% rounded-lg" src="dist/img/img-1.jpg" alt="Orange Plane In The Sky" />
+                <img
+                  class="block h-auto w-100% rounded-lg"
+                  src="dist/img/img-1.jpg"
+                  alt="Orange Plane In The Sky"
+                />
               </div>
               <div class="p-5">
                 <h4 class="text-black font-bold">Tailwind</h4>
@@ -229,12 +262,62 @@
             </code>
           </pre>
           <!-- code preview ends-->
+          <!-- code preview start-->
+          <pre>   
+            <code class="language-css">
+            .transform-perspective-left {
+              transform: scale(1) perspective(500px) rotateX(0deg) rotateY(-15deg) rotateZ(0deg) translateY(0px);
+            }
+            </code>
+          </pre>
+          <!-- code preview ends-->
+          <div class="w-full max-w-2xl">
+            <h3 class="text-2xl font-bold my-5">Card Horizontal</h3>
+            <div class="flex flex-row bg-white border rounded-lg shadow-md overflow-hidden">
+              <div class="flex-0">
+                <img
+                  class="h-full w-64"
+                  src="/dist/img/img-1.jpg"
+                  alt="image of orange plane flying"
+                />
+              </div>
+              <div class="flex flex-col flex-1 justify-center p-10">
+                <h4 class="font-bold text-black">Tail Components</h4>
+                <p classs="text-black">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit ducimus impedit
+                  incidunt quibusdam. Eum non itaque et pariatur quis.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- code preview start-->
+        <pre>   
+          <code class="language-html">
+            &lt;div class="flex flex-row bg-white border rounded-lg shadow-md overflow-hidden">
+              &lt;div class="flex-0">
+                &lt;img
+                  class="h-full w-64"
+                  src=""
+                  alt=""
+                />
+              &lt;/div>
+              &lt;div class="flex flex-col flex-1 justify-center p-10">
+                &lt;h4 class="font-bold text-black">Tail Components&lt;/h4>
+                &lt;p classs="text-black">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit ducimus impedit
+                  incidunt quibusdam. Eum non itaque et pariatur quis.
+                &lt;/p>
+              &lt;/div>
+            &lt;/div>
+          </code>
+        </pre>
       </div>
+      <!-- code preview ends-->
       <div class="container">
-        <h2 class="font-black py-5 text-4xl">Buttons</h2>
+        <h2 class="text-4xl font-bold text-black py-5">Buttons</h2>
         <div class="w-full">
-          <h3 class="mb-5 font-bold">Default button</h3>
+          <h3 class="text-2xl font-bold my-5">Default Button</h3>
           <button
             class="border font-bold bg-accent text-black hover:bg-green-300 rounded py-2 px-3 cursor-pointer"
           >
@@ -249,7 +332,7 @@
           <!-- code preview ends-->
         </div>
         <div class="w-full">
-          <h3 class="my-5 font-bold">Medium button</h3>
+          <h3 class="text-2xl font-bold my-5">Medium button</h3>
           <button
             class="border font-bold bg-accent text-black hover:bg-green-300 rounded py-3 px-4 cursor-pointer"
           >
@@ -264,7 +347,7 @@
           <!-- code preview ends-->
         </div>
         <div class="w-full">
-          <h3 class="my-5 font-bold">Large button</h3>
+          <h3 class="my-5 text-2xl font-bold">Large button</h3>
           <button
             class="border font-bold bg-accent text-black hover:bg-green-300 rounded py-4 px-5 cursor-pointer"
           >
@@ -279,7 +362,7 @@
           <!-- code preview ends-->
         </div>
         <div class="w-full">
-          <h3 class="my-5 font-bold">Icon button</h3>
+          <h3 class="my-5 text-2xl font-bold">Icon button</h3>
           <button
             class="flex items-center bg-accent text-black hover:bg-green-300 border font-bold rounded py-2 px-3 cursor-pointer"
           >
@@ -300,10 +383,12 @@
         </div>
       </div>
       <div class="container">
-        <h2 class="font-black py-5 text-4xl">Inputs</h2>
+        <h2 class="text-4xl font-bold text-black py-5">Inputs</h2>
         <div class="w-full">
-          <h3 class="my-5 font-bold">Input</h3>
-          <input type="text" aria-label="input field"
+          <h3 class="my-5 text-2xl font-bold">Input</h3>
+          <input
+            type="text"
+            aria-label="input field"
             class="flex items-center border p-3 rounded bg-white shadow"
             placeholder="Enter Text"
           />
@@ -316,11 +401,16 @@
           <!-- code preview ends-->
         </div>
         <div class="w-full">
-          <h3 class="my-5 font-bold">Input button</h3>
+          <h3 class="my-5 text-2xl font-bold">Input button</h3>
           <div
             class="flex items-stretch flex-no-wrap w-full relative border bg-white rounded shadow max-w-xs"
           >
-            <input type="text" aria-label="input field" class="w-full pl-3 py-3" placeholder="Enter Text" />
+            <input
+              type="text"
+              aria-label="input field"
+              class="w-full pl-3 py-3"
+              placeholder="Enter Text"
+            />
             <button class="bg-accent text-black hover:bg-green-300 p-2 rounded">Submit</button>
           </div>
           <!-- code preview start-->
@@ -335,8 +425,10 @@
           <!-- code preview ends-->
         </div>
         <div class="w-full">
-          <h3 class="my-5 font-bold">Textarea</h3>
-          <textarea type="text" aria-label="textarea"
+          <h3 class="text-2xl font-bold text-black my-5">Textarea</h3>
+          <textarea
+            type="text"
+            aria-label="textarea"
             class="flex items-center border p-3 rounded bg-white shadow"
             name=""
             id=""
@@ -354,15 +446,15 @@
         <div class="w-1/3"></div>
       </div>
       <div class="container">
-        <h2 class="font-black py-5 text-4xl">Selector</h2>
+        <h2 class="text-4xl font-bold text-black py-5">Selector</h2>
         <div class="flex flex-wrap">
           <div class="w-full">
-            <h3 class="font-bold font-black mb-5">Single Selector:</h3>
+            <h3 class="text-2xl font-bold text-black mb-5">Single Selector:</h3>
             <div class="inline-block relative">
-              <select 
+              <select
                 class="block appearance-none w-full bg-white border py-3 px-3 pr-8 rounded cursor-pointer hover:bg-gray-100 focus:bg-gray-100 focus:border-gray-50 overflow-hidden"
                 aria-label="select a css framework"
-                >
+              >
                 <option value="">Select an option</option>
                 <option value="Tailwind">Tailwind</option>
                 <option value="Tailwind">Bootstrap</option>
@@ -402,9 +494,9 @@
         </div>
       </div>
       <div class="container">
-        <h2 class="font-black py-5 text-4xl">12 Grid System</h2>
+        <h2 class="text-4xl font-bold text-black py-5">12 Grid System</h2>
         <div class="w-full">
-          <h3 class="font-black py-2">4 Column Gird</h3>
+          <h3 class="font-black text-2xl font-bold py-2">4 Column Gird</h3>
           <div class="flex h-12 border">
             <div class="w-3/12 bg-gray-400"></div>
             <div class="w-3/12 bg-gray-800"></div>
@@ -423,7 +515,7 @@
             </code>
           </pre>
           <!-- code preview ends-->
-          <h3 class="font-black py-2">3 Column Gird</h3>
+          <h3 class="font-black text-2xl font-bold py-2">3 Column Gird</h3>
           <div class="flex h-12 border">
             <div class="w-4/12 bg-gray-400"></div>
             <div class="w-4/12 bg-gray-800"></div>
@@ -440,7 +532,7 @@
             </code>
           </pre>
           <!-- code preview ends-->
-          <h3 class="font-black py-2">2 Column Grid</h3>
+          <h3 class="text-2xl font-bold text-black py-2">2 Column Grid</h3>
           <div class="flex h-12 border">
             <div class="w-6/12 bg-gray-400"></div>
             <div class="w-6/12 bg-gray-800"></div>
@@ -455,7 +547,7 @@
             </code>
           </pre>
           <!-- code preview ends-->
-          <h3 class="font-black py-2">Full Width Grid</h3>
+          <h3 class="text-2xl font-bold text-black py-2">Full Width Grid</h3>
           <div class="flex h-12 border">
             <div class="w-full bg-gray-400"></div>
           </div>
@@ -471,7 +563,7 @@
         </div>
       </div>
       <div class="container">
-        <h2 class="font-black py-5 text-4xl">Badges/Pills</h2>
+        <h2 class="text-4xl font-bold text-black py-5">Badges/Pills</h2>
         <div class="flex flex-wrap">
           <div class="w-full">
             <span
@@ -530,18 +622,15 @@
         </div>
       </div>
       <div class="container">
-        <h2 class="font-black py-5 text-4xl">Hero Sections</h2>
-        <div class="flex">
-          <div class="w-screen bg-accent">
-            <div class="flex">
-              <div class="w-full flex flex-col justify-center items-center p-32">
-                <h1 class="text-black text-5xl mb-3">Tailwind Components</h1>
-                <p class="inline-block text-gray-900 max-w-md text-center">
-                  Components made for your next Tailwind project. Get a quick baseline to work from
-                  and apply your own styling them to.
-                </p>
-              </div>
-            </div>
+        <h2 class="text-4xl font-bold text-black py-5">Hero Sections</h2>
+        <h3 class="text-2xl font-bold text-black font-black"></h3>
+        <div class="flex bg-accent">
+          <div class="w-full flex flex-col justify-center items-center py-32">
+            <h1 class="text-black text-6xl mb-3">Tailwind Components</h1>
+            <p class="inline-block text-lg text-gray-900 max-w-md text-center">
+              Components made for your next Tailwind project. Get a quick baseline to work from and
+              apply your own styling them to.
+            </p>
           </div>
         </div>
       </div>
@@ -549,30 +638,28 @@
       <div class="container">
         <pre>   
           <code class="language-html">
-            &lt;div class="w-screen bg-indigo-700"&gt;
-              &lt;div class="flex"&gt;
-                &lt;div class="w-full flex flex-col justify-center items-center p-32"&gt;
-                  &lt;h1 class="text-white text-5xl mb-3">Tailwind Components&lt;/h1&gt;
-                  &lt;p class="inline-block text-gray-200 max-w-md text-center"&gt;
-                    Components made for your next Tailwind project. Get a quick baseline to work from
-                    and apply your own styling them to.
-                  &lt;/p&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
+             &lt;div class="flex">
+               &lt;div class="w-full flex flex-col justify-center items-center py-32">
+                 &lt;h1 class="text-black text-6xl mb-3">Tailwind Components&lt;/h1>
+                 &lt;p class="inline-block text-lg text-gray-900 max-w-md text-center">
+                  Components made for your next Tailwind project. Get a quick baseline to work from and
+                  apply your own styling them to.
+                 &lt;/p>
+               &lt;/div>
+             &lt;/div>
           </code>
         </pre>
       </div>
       <!-- code preview ends-->
       <div class="container">
-        <div class="flex mt-5">
-          <div class="w-screen bg-accent">
-            <div class="flex flex-wrap">
+        <div class="w-full bg-accent">
+          <div class="container mx-auto">
+            <div class="flex">
               <div class="w-1/2">
-                <div class="w-full flex flex-col justify-center items-center p-32">
-                  <div class="flex flex-col p-5 max-w-sm">
-                    <h1 class="text-black text-5xl mb-3">Tailwind Components</h1>
-                    <p class="inline-block text-gray-900 leading-relaxed">
+                <div class="w-full flex flex-col justify-center items-center py-32">
+                  <div class="flex flex-col p-5 max-w-md">
+                    <h1 class="text-black text-6xl mb-3">Tailwind Components</h1>
+                    <p class="inline-block text-lg text-gray-800 leading-relaxed">
                       Components made for your next Tailwind project. Get a quick baseline to work
                       from and apply your own styling them to.
                     </p>
@@ -581,7 +668,11 @@
               </div>
               <div class="w-1/2">
                 <div class="w-full flex flex-col justify-center items-center h-full">
-                  <img src="dist/img/To-The-Stars.svg" alt="illustration of rocket launching" />
+                  <img
+                    class="max-w-xl"
+                    src="/dist/img/designer.svg"
+                    alt="illustration of a designer"
+                  />
                 </div>
               </div>
             </div>
@@ -592,30 +683,38 @@
       <div class="container">
         <pre>   
           <code class="language-html">
-            &lt;div class="flex flex-wrap"&gt;
-              &lt;div class="w-1/2"&gt;
-                &lt;div class="w-full flex flex-col justify-center items-center p-32"&gt;
-                  &lt;div class="flex flex-col p-5 max-w-sm"&gt;
-                    &lt;h1 class="text-white text-5xl mb-3">Tailwind Components&lt;/h1&gt;
-                    &lt;p class="inline-block text-gray-200 leading-relaxed"&gt;
-                      Components made for your next Tailwind project. Get a quick baseline to work
-                      from and apply your own styling them to.
-                    &lt;/p&gt;
-                  &lt;/div&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-              &lt;div class="w-1/2"&gt;
-                &lt;div class="w-full flex flex-col justify-center items-center h-full"&gt;
-                  &lt;img src="" alt="" /&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
+            &lt;div class="w-full">
+              &lt;div class="container mx-auto">
+                &lt;div class="flex">
+                  &lt;div class="w-1/2">
+                    &lt;div class="w-full flex flex-col justify-center items-center py-32">
+                      &lt;div class="flex flex-col p-5 max-w-md">
+                        &lt;h1 class="text-black text-6xl mb-3">Tailwind Components&lt;/h1>
+                        &lt;p class="inline-block text-lg text-gray-800 leading-relaxed">
+                          Components made for your next Tailwind project. Get a quick baseline to work
+                          from and apply your own styling them to.
+                        &lt;/p>
+                      &lt;/div>
+                    &lt;/div>
+                  &lt;/div>
+                  &lt;div class="w-1/2">
+                    &lt;div class="w-full flex flex-col justify-center items-center h-full">
+                      &lt;img
+                        class="max-w-xl"
+                        src="/dist/img/designer.svg"
+                        alt="illustration of a designer"
+                      />
+                    &lt;/div>
+                  &lt;/div>
+                &lt;/div>
+              &lt;/div>
+            &lt;/div>
           </code>
         </pre>
       </div>
       <!-- code preview ends-->
       <div class="container">
-        <h2 class="font-black py-5 text-4xl">Table</h2>
+        <h2 class="text-4xl font-bold text-black py-5">Table</h2>
         <div class="flex">
           <div class="w-full">
             <table class="table-auto w-full border">
@@ -684,10 +783,10 @@
       </div>
       <!-- code preview ends-->
       <div class="container">
-        <h2 class="font-black py-5 text-4xl">List</h2>
+        <h2 class="text-4xl font-bold text-black py-5">List</h2>
         <div class="flex flex-wrap">
           <div class="w-full">
-            <h3 class="font-bold font-black">Unordered List:</h3>
+            <h3 class="text-2xl font-bold text-black">Unordered List:</h3>
             <ul>
               <li class="py-3">Tailwind</li>
               <li class="pb-3">Tailwind</li>
@@ -710,7 +809,7 @@
             <!-- code preview ends-->
           </div>
           <div class="w-full">
-            <h3 class="font-bold font-black">Ordered List:</h3>
+            <h3 class="text-2xl font-bold text-black">Ordered List:</h3>
             <ol class="list-decimal pl-4">
               <li class="py-3">Tail Components</li>
               <li class="py-3">Tail Components</li>
@@ -735,10 +834,10 @@
         </div>
       </div>
       <div class="container">
-        <h2 class="font-black py-5 text-4xl">Accordion</h2>
+        <h2 class="text-4xl font-bold text-black py-5">Accordion</h2>
         <div class="flex flex-wrap">
           <div class="w-full">
-            <h3 class="font-bold font-black">
+            <h3 class="text-2xl font-bold text-black">
               Details element is only supported in modern browsers!
             </h3>
             <a
@@ -773,8 +872,8 @@
       </div>
       <!-- code preview ends-->
       <div class="container">
-        <h2 class="font-black py-5 text-4xl">Navbar</h2>
-        <h3 class="font-black py-3 text-2xl">Navigation bar Static:</h3>
+        <h2 class="text-4xl font-bold text-black py-5">Navbar</h2>
+        <h3 class="text-2xl font-bold text-black py-3">Navigation bar Static:</h3>
         <nav class="w-full justify-between">
           <div class="flex items-center max-w-5xl mx-auto p-5 border rounded">
             <div class="flex-1">
@@ -817,7 +916,7 @@
       </div>
       <!-- code preview ends-->
       <div class="container">
-        <h3 class="font-black py-3 text-2xl">Navigation Bar Fixed:</h3>
+        <h3 class="text-2xl font-bold text-blac py-3">Navigation Bar Fixed:</h3>
         <nav class="w-full justify-between">
           <div class="flex items-center max-w-5xl mx-auto p-5 border rounded">
             <div class="flex-1">
@@ -860,11 +959,12 @@
       </div>
       <!-- code preview ends-->
       <div class="container">
-        <h2 class="font-black py-5 text-4xl">Alerts</h2>
-        <h3 class="font-black py-2">Notification alert:</h3>
+        <h2 class="text-4xl font-bold text-black py-5">Alerts</h2>
+        <h3 class="text-2xl font-bold text-black py-2">Notification alert:</h3>
         <div class="flex items-center rounded bg-accent px-5 py-6">
           Hello i'm a notification. Please read the follwing messages
         </div>
+        <!-- code preview start-->
         <pre>   
           <code class="language-html">
             &ltdiv class="flex items-center rounded bg-green-400 px-5 py-6">
@@ -872,21 +972,25 @@
             &lt/div>
           </code>
         </pre>
-        <h3 class="font-black py-2">Warning alert:</h3>
+        <!-- code preview ends-->
+        <h3 class="text-2xl font-bold text-black py-2">Warning alert:</h3>
         <div class="flex items-center rounded bg-orange-400 px-5 py-6">
           Hello i'm a notification. Please read the follwing messages
         </div>
+        <!-- code preview start-->
         <pre>   
-            <code class="language-html">
-              &lt;div class="flex items-center rounded bg-orange-400 px-5 py-6">
-                Hello i'm a notification. Please read the follwing messages
-              &lt;/div>
-            </code>
-          </pre>
-        <h3 class="font-black py-2">Danger alert:</h3>
+          <code class="language-html">
+            &lt;div class="flex items-center rounded bg-orange-400 px-5 py-6">
+              Hello i'm a notification. Please read the follwing messages
+            &lt;/div>
+          </code>
+        </pre>
+        <!-- code preview ends-->
+        <h3 class="text-2xl font-bold text-black py-2">Danger alert:</h3>
         <div class="flex items-center rounded bg-red-600 px-5 py-6">
           Hello i'm a notification. Please read the follwing messages
         </div>
+        <!-- code preview start-->
         <pre>   
           <code class="language-html">
             &lt;div class="flex items-center rounded bg-red-600 px-5 py-6">
@@ -894,16 +998,224 @@
             &lt;/div>
           </code>
         </pre>
+        <!-- code preview ends-->
       </div>
       <div class="container">
-        <h2 class="font-bold text-4xl py-5">Still More To Come!</h2>
-        <div class="flex mb-5"> 
-          <h3 class="font-bold text-2xl mb-2">Submit suggestions or any issues:</h3>
-          <a class="flex items-center justify-center bg-accent hover:bg-green-400 font-bold text-black w-24 p-1 ml-2 cursor-pointer rounded" href="https://github.com/rexdesigndk/Tail-Components/issues" aria-label="link to tail's github issues">Submit</a>
+        <h2 class="text-4xl font-bold text-black py-5">Footer</h2>
+        <h3 class="text-2xl font-bold text-black">Extended Footer</h3>
+        <footer class="w-full bg-accent border-t ">
+          <div class="container">
+            <div class="flex flex-row px-10 pt-16 pb-12">
+              <div class="w-1/3 mr-4 justify-start">
+                <div class="flex flex-col justify-start">
+                  <h4 class="font-bold mb-2">Tail-Components</h4>
+                  <p>
+                    Components made for your next Tailwind project. Get a quick baseline to work
+                    from
+                  </p>
+                </div>
+              </div>
+              <div class="w-1/4 mr-4">
+                <h4 class="font-bold mb-2">Page Links</h4>
+                <ul class="flex flex-col justify-start">
+                  <li>Tailwind</li>
+                  <li>Tailwind</li>
+                  <li>Tailwind</li>
+                  <li>Tailwind</li>
+                </ul>
+              </div>
+              <div class="w-1/4 mr-4">
+                <h4 class="font-bold mb-2">Resources</h4>
+                <ul class="flex flex-col justify-start">
+                  <li>Tailwind</li>
+                  <li>Tailwind</li>
+                  <li>Tailwind</li>
+                  <li>Tailwind</li>
+                </ul>
+              </div>
+              <div class="w-1/4">
+                <h4 class="font-bold mb-2">Social Media</h4>
+                <ul class="flex flex-col justify-start">
+                  <li>
+                    <a class="hover:text-gray-900 cursor-pointer" href="#" aria-label="Link To Twitter">
+                      <box-icon name="twitter" type="logo"></box-icon>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="hover:text-gray-900 cursor-pointer" href="#" aria-label="Link To Dribble">
+                      <box-icon name="dribbble" type="logo"></box-icon>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="hover:text-gray-900 cursor-pointer" href="#"  aria-label="Link To Linkedin">
+                      <box-icon name="linkedin-square" type="logo"></box-icon>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="w-full bg-white px-10 py-5 flex border">
+            <p class="text-sm">Copyright © 2019 rexdesign</p>
+          </div>
+        </footer>
+      </div>
+      <div class="container">
+        <!-- code preview start-->
+        <pre>   
+          <code class="language-html">
+            &lt;footer class="w-full bg-accent border-t ">
+              &lt;div class="container">
+                &lt;div class="flex flex-row px-10 pt-16 pb-12">
+                  &lt;div class="w-1/3 mr-4 justify-start">
+                    &lt;div class="flex flex-col justify-start">
+                      &lt;h4 class="font-bold mb-2">Tail-Components&lt;/h4>
+                      &lt;p>
+                        Components made for your next Tailwind project. Get a quick baseline to work
+                        from
+                      &lt;/p>
+                    &lt;/div>
+                  &lt;/div>
+                  &lt;div class="w-1/4 mr-4">
+                    &lt;h4 class="font-bold mb-2">Page Links&lt;/h4>
+                    &lt;ul class="flex flex-col justify-start">
+                      &lt;li>Tailwind&lt;/li>
+                      &lt;li>Tailwind&lt;/li>
+                      &lt;li>Tailwind&lt;/li>
+                      &lt;li>Tailwind&lt;/li>
+                    &lt;/ul>
+                  &lt;/div>
+                  &lt;div class="w-1/4 mr-4">
+                    &lt;h4 class="font-bold mb-2">Resources&lt;/h4>
+                    &lt;ul class="flex flex-col justify-start">
+                      &lt;li>Tailwind&lt;/li>
+                      &lt;li>Tailwind&lt;/li>
+                      &lt;li>Tailwind&lt;/li>
+                      &lt;li>Tailwind&lt;/li>
+                    &lt;/ul>
+                  &lt;/div>
+                  &lt;div class="w-1/4">
+                    &lt;h4 class="font-bold mb-2">Social Media &lt;/h4>
+                    &lt;ul class="flex flex-col justify-start">
+                      &lt;li>
+                        &lt;a class="hover:text-gray-900 cursor-pointer" href="#" aria-label="">
+                          &lt;box-icon name="twitter" type="logo">&lt;/box-icon>
+                        &lt;/a>
+                      &lt;/li>
+                      &lt;li>
+                        &lt;a class="hover:text-gray-900 cursor-pointer" href="#" aria-label="">
+                          &lt;box-icon name="dribbble" type="logo">&lt;/box-icon>
+                        &lt;/a>
+                      &lt;/li>
+                      &lt;li>
+                        &lt;a class="hover:text-gray-900 cursor-pointer" href="#" aria-label="">
+                          &lt;box-icon name="linkedin-square" type="logo">&lt;/box-icon>
+                        &lt;/a>
+                      &lt;/li>
+                    &lt;/ul>
+                  &lt;/div>
+                &lt;/div>
+              &lt;/div>
+              &lt;div class="w-full bg-white px-10 py-5 flex border">
+                &lt;p class="text-sm">Copyright © 2019 rexdesign&lt;/p>
+              &lt;/div>
+            &lt;/footer>
+          </code>
+        </pre>
+        <!-- code preview ends-->
+      </div>
+      <div class="container">
+        <h2 class="text-4xl font-bold text-black py-5">Footer</h2>
+        <h3 class="text-2xl font-bold text-black">Compact Footer</h3>
+        <footer class="w-full bg-accent">
+          <div class="flex flex-row justify-center px-10 pt-8 pb-6">
+            <div class="w-1/3">
+              <div class="flex justify-center">
+                <h4 class="font-bold">Tailwind Components</h4>
+              </div>
+            </div>
+            <div class="w-1/3">
+              <ul class="flex flex-row items-center justify-center">
+                <li class="mr-4">
+                  <a class="hover:text-gray-900 cursor-pointer" href="#" aria-label="Link To Twitter">
+                    <box-icon name="twitter" type="logo"></box-icon>
+                  </a>
+                </li>
+                <li class="mr-4">
+                  <a class="hover:text-gray-900 cursor-pointer" href="#" aria-label="Link To Dribble">
+                    <box-icon name="dribbble" type="logo"></box-icon>
+                  </a>
+                </li>
+                <li>
+                  <a class="hover:text-gray-900 cursor-pointer" href="#" aria-label="Link To Linkedin">
+                    <box-icon name="linkedin-square" type="logo"></box-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="w-1/3">
+              <div class="flex justify-center">
+                <p class="text-sm">Copyright © 2019 rexdesign</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <div class="container">
+        <!-- code preview start-->
+        <pre>   
+          <code class="language-html">
+            &lt;footer class="w-full bg-accent">
+              &lt;div class="flex flex-row justify-center px-10 pt-8 pb-6">
+                &lt;div class="w-1/3">
+                  &lt;div class="flex justify-center">
+                    &lt;h4 class="font-bold">Tailwind Components&lt;/h4>
+                  &lt;/div>
+                &lt;/div>
+                &lt;div class="w-1/3">
+                  &lt;ul class="flex flex-row items-center justify-center">
+                    &lt;li class="mr-4">
+                      &lt;a class="hover:text-gray-900 cursor-pointer" href="#" aria-label="">
+                        &lt;box-icon name="twitter" type="logo">&lt;/box-icon>
+                      &lt;/a>
+                    &lt;/li>
+                    &lt;li class="mr-4">
+                      &lt;a class="hover:text-gray-900 cursor-pointer" href="#" aria-label="">
+                        &lt;box-icon name="dribbble" type="logo">&lt;/box-icon>
+                      &lt;/a>
+                    &lt;/li>
+                    &lt;li>
+                      &lt;a class="hover:text-gray-900 cursor-pointer" href="#" aria-label="">
+                        &lt;box-icon name="linkedin-square" type="logo">&lt;/box-icon>
+                      &lt;/a>
+                    &lt;/li>
+                  &lt;/ul>
+                &lt;/div>
+                &lt;div class="w-1/3">
+                  &lt;div class="flex justify-center">
+                    &lt;p class="text-sm">Copyright © 2019 rexdesign&lt;/p>
+                  &lt;/div>
+                &lt;/div>
+              &lt;/div>
+            &lt;/footer>
+          </code>
+        </pre>
+        <!-- code preview ends-->
+      </div>
+      <div class="container">
+        <h2 class="text-4xl font-bold text-black py-5">Still More To Come!</h2>
+        <div class="flex mb-5">
+          <h3 class="text-2xl font-bold text-black mb-2">Submit suggestions or any issues:</h3>
+          <a
+            class="flex items-center justify-center bg-accent hover:bg-green-400 font-bold text-black w-24 p-1 ml-2 cursor-pointer rounded"
+            href="https://github.com/rexdesigndk/Tail-Components/issues"
+            aria-label="link to tail's github issues"
+            >Submit</a
+          >
         </div>
       </div>
     </main>
-    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
-    <script src="dist/js/dist.js"></script>
+    <script async src="dist/js/dist.js"></script>
+    <script defer src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
   </body>
 </html>

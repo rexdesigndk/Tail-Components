@@ -4,9 +4,9 @@ Components made based on default Tailwind. Get a quick baseline for your next Ta
 
 [Showcase](https://rexdesign.dev/)
 
-## 
+## Usage
 
-Simply copy paste the code over to your project. The showcase website makes it easy to get going.
+Simply copy paste the code over to your project.
 
 ## Built With
 
@@ -14,9 +14,9 @@ Simply copy paste the code over to your project. The showcase website makes it e
 
 ## Todo
 
-**1.** Add footer designs   
-**2.** More card designs (horizontal)   
-**3.** Custom checkbox/radio input   
+**1.** Custom checkbox/radio input  
+**2.** Make The Navbar Responsive (mobile menu) 
+**3.** Add more list types
 
 I welcome any feedback or suggestions. 
 
