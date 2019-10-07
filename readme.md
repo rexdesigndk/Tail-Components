@@ -14,9 +14,9 @@ Simply copy paste the code over to your project.
 
 ## Todo
 
-**1.** Custom checkbox/radio input  
-**2.** Make The Navbar Responsive (mobile menu) 
-**3.** Add more list types
+**1.** Custom checkbox/radio input    
+**2.** Make The Navbar Responsive (mobile menu)  
+**3.** Add more list types   
 
 I welcome any feedback or suggestions. 
 
