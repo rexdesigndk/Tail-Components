@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <link rel="preconnect" href="https://unpkg.com" crossorigin />
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="dist/css/main.css" />
-    <link rel="stylesheet" href="src/css/prism.css" />
+    <link rel="stylesheet" href="dist/css/main.min.css" type="text/css"/>
+    <link rel="stylesheet" href="src/css/prism.css" type="text/css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet" />
     <!-- favicons -->
@@ -21,7 +21,7 @@
   <body>
     <header>
       <nav class="w-full bg-white shadow z-10">
-        <div class="flex justify-between items-center max-w-5xl mx-auto p-5">
+        <div class="flex justify-between items-center max-w-5xl mx-auto py-5">
           <div class="flex-initial">
             <img class="h-10 w-auto" src="dist/img/logo.svg" alt="logo" />
           </div>
@@ -43,12 +43,12 @@
         </div>
       </nav>
       <div class="w-full bg-accent">
-        <div class="container mx-auto">
+        <div class="container max-w-5xl mx-auto">
           <div class="flex">
-            <div class="w-1/2">
+            <div class="w-1/2 pl-2">
               <div class="w-full flex flex-col justify-center items-center py-32">
-                <div class="flex flex-col p-5 max-w-md">
-                  <h1 class="text-black text-6xl mb-3">Tailwind UI Components</h1>
+                <div class="flex flex-col py-5 max-w-md">
+                  <h1 class="text-black text-6xl mb-3 leading-tight">Tailwind UI Components</h1>
                   <p class="inline-block text-lg text-gray-800 leading-relaxed">
                     Components made for your next Tailwind project. Get a quick baseline to work
                     from and apply your own styling them to.
@@ -70,7 +70,7 @@
       </div>
     </header>
     <main class="max-w-5xl mx-auto">
-      <div class="container mx-auto">
+      <div class="container">
         <h2 class="text-4xl font-bold text-black py-5 ">Text</h2>
         <h1 class="text-6xl font-bold text-black">Heading 1</h1>
         <!-- code preview start-->
@@ -962,39 +962,105 @@
         <h2 class="text-4xl font-bold text-black py-5">Alerts</h2>
         <h3 class="text-2xl font-bold text-black py-2">Notification alert:</h3>
         <div class="flex items-center rounded bg-accent px-5 py-6">
-          Hello i'm a notification. Please read the follwing messages
+          <div class="text-black mr-4"> 
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" overflow="scroll">
+              <style>
+                .st0{fill:currentColor}
+              </style>
+              <path class="st0" d="M10 0C4.5 0 0 4.5 0 10s4.5 10 10 10 10-4.5 10-10S15.5 0 10 0zm5.4 7L10 13.2l-1.3 1.5c-.2.2-.5.2-.7.1l-3.3-2.9c-.2-.2-.2-.5-.1-.7l1-1.1c.2-.3.5-.3.7-.1l1.4 1.2c.2.2.5.2.7-.1l5.1-5.8c.2-.2.5-.2.7-.1l1.1 1c.2.2.3.6.1.8z"/>
+            </svg>
+          </div>
+          <div class="flex flex-col">          
+            <h4 class="font-bold text-black">Success</h4>
+            <p class="text-black">Hello i'm a notification. Please read the follwing messages</p>
+          </div>
         </div>
         <!-- code preview start-->
         <pre>   
           <code class="language-html">
-            &ltdiv class="flex items-center rounded bg-green-400 px-5 py-6">
-              Hello i'm a notification. Please read the follwing messages
-            &lt/div>
+            &lt;div class="flex items-center rounded bg-accent px-5 py-6">
+              &lt;div class="text-black mr-4"> 
+                &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" overflow="scroll">
+                  &lt;style>
+                    .st0{fill:currentColor}
+                  &lt;/style>
+                  &lt;path class="st0" d="M10 0C4.5 0 0 4.5 0 10s4.5 10 10 10 10-4.5 10-10S15.5 0 10 0zm5.4 7L10 13.2l-1.3 1.5c-.2.2-.5.2-.7.1l-3.3-2.9c-.2-.2-.2-.5-.1-.7l1-1.1c.2-.3.5-.3.7-.1l1.4 1.2c.2.2.5.2.7-.1l5.1-5.8c.2-.2.5-.2.7-.1l1.1 1c.2.2.3.6.1.8z"/>
+                &lt;/svg>
+              &lt;/div>
+              &lt;div class="flex flex-col">          
+                &lt;h4 class="font-bold text-black">Success&lt;/h4>
+                &lt;p class="text-black">Hello i'm a notification. Please read the follwing messages&lt;/p>
+              &lt;/div>
+            &lt;/div>
           </code>
         </pre>
         <!-- code preview ends-->
         <h3 class="text-2xl font-bold text-black py-2">Warning alert:</h3>
         <div class="flex items-center rounded bg-orange-400 px-5 py-6">
-          Hello i'm a notification. Please read the follwing messages
+          <div class="text-black mr-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" overflow="scroll">
+              <style>
+                .st0{fill:currentColor}
+              </style>
+              <path class="st0" d="M10 0C4.5 0 0 4.5 0 10s4.5 10 10 10 10-4.5 10-10S15.5 0 10 0zm1 16.3c0 .1 0 .2-.1.3s-.2.1-.3.1H8.8c-.1 0-.2 0-.3-.1s-.1-.2-.1-.3v-1.6c0-.1 0-.2.1-.3s.2-.1.3-.1h1.8c.1 0 .2 0 .3.1.1.1.1.2.1.3v1.6zm2.7-7.6c-.3.4-.7 1-1.2 1.5-.4.4-.7.8-.9 1.1-.2.3-.4.6-.4.9 0 .3-.1.5-.1.6-.1.2-.1.3-.2.3-.1.1-.2.1-.3.1H8.8c-.1 0-.2 0-.3-.1-.1-.1-.1-.2-.1-.3v-.6c.1-.6.2-1.1.5-1.5.3-.4.7-.9 1.2-1.4.4-.4.7-.7.9-1 .2-.3.3-.5.3-.8 0-.5-.1-.9-.5-1.2-.1-.1-.6-.3-1.1-.3-1.2 0-1.9.6-2.1 1.8-.1.2-.3.4-.5.4H5.5c-.1 0-.2 0-.3-.1-.1-.1-.1-.2-.1-.4 0-.7.2-1.3.6-1.9s.9-1 1.6-1.4 1.5-.5 2.5-.5 1.8.2 2.5.5c.6.3 1.1.7 1.4 1.2s.4 1 .4 1.5c0 .7-.1 1.2-.4 1.6z"/>
+            </svg>
+          </div>
+          <div class="flex flex-col">          
+            <h4 class="font-bold text-black">Warning</h4>
+            <p class="text-black">Hello i'm a notification. Please read the follwing messages</p>
+          </div>
         </div>
         <!-- code preview start-->
         <pre>   
           <code class="language-html">
             &lt;div class="flex items-center rounded bg-orange-400 px-5 py-6">
-              Hello i'm a notification. Please read the follwing messages
+              &lt;div class="text-black mr-4">
+                &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" overflow="scroll">
+                  &lt;style>
+                    .st0{fill:currentColor}
+                  &lt;/style>
+                  &lt;path class="st0" d="M10 0C4.5 0 0 4.5 0 10s4.5 10 10 10 10-4.5 10-10S15.5 0 10 0zm1 16.3c0 .1 0 .2-.1.3s-.2.1-.3.1H8.8c-.1 0-.2 0-.3-.1s-.1-.2-.1-.3v-1.6c0-.1 0-.2.1-.3s.2-.1.3-.1h1.8c.1 0 .2 0 .3.1.1.1.1.2.1.3v1.6zm2.7-7.6c-.3.4-.7 1-1.2 1.5-.4.4-.7.8-.9 1.1-.2.3-.4.6-.4.9 0 .3-.1.5-.1.6-.1.2-.1.3-.2.3-.1.1-.2.1-.3.1H8.8c-.1 0-.2 0-.3-.1-.1-.1-.1-.2-.1-.3v-.6c.1-.6.2-1.1.5-1.5.3-.4.7-.9 1.2-1.4.4-.4.7-.7.9-1 .2-.3.3-.5.3-.8 0-.5-.1-.9-.5-1.2-.1-.1-.6-.3-1.1-.3-1.2 0-1.9.6-2.1 1.8-.1.2-.3.4-.5.4H5.5c-.1 0-.2 0-.3-.1-.1-.1-.1-.2-.1-.4 0-.7.2-1.3.6-1.9s.9-1 1.6-1.4 1.5-.5 2.5-.5 1.8.2 2.5.5c.6.3 1.1.7 1.4 1.2s.4 1 .4 1.5c0 .7-.1 1.2-.4 1.6z"/>
+                &lt;/svg>
+              &lt;/div>
+              &lt;div class="flex flex-col">          
+                &lt;h4 class="font-bold text-black">Warning&lt;/h4>
+                &lt;p class="text-black">Hello i'm a notification. Please read the follwing messages&lt;/p>
+              &lt;/div>
             &lt;/div>
           </code>
         </pre>
         <!-- code preview ends-->
         <h3 class="text-2xl font-bold text-black py-2">Danger alert:</h3>
         <div class="flex items-center rounded bg-red-600 px-5 py-6">
-          Hello i'm a notification. Please read the follwing messages
+          <div class="text-black mr-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" overflow="scroll">
+              <style>
+                .st0{fill:currentColor}
+              </style>
+              <path class="st0" d="M10 0C4.5 0 0 4.5 0 10s4.5 10 10 10 10-4.5 10-10S15.5 0 10 0zm1.6 15.5c0 .6-.4 1-1 1H9.4c-.6 0-1-.4-1-1v-1.3c0-.6.4-1 1-1h1.3c.6 0 1 .4 1 1v1.3zm0-4.4c0 .6-.4 1-1 1H9.4c-.6 0-1-.4-1-1V4.5c0-.6.4-1 1-1h1.3c.6 0 1 .4 1 1v6.6z"/>
+            </svg>
+          </div>
+          <div class="flex flex-col">          
+            <h4 class="font-bold text-black">Danger</h4>
+            <p class="text-black">Hello i'm a notification. Please read the follwing messages</p>
+          </div>
         </div>
         <!-- code preview start-->
         <pre>   
-          <code class="language-html">
+          <code class="language-html">  
             &lt;div class="flex items-center rounded bg-red-600 px-5 py-6">
-              Hello i'm a notification. Please read the follwing messages
+              &lt;div class="text-black mr-4">
+                &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" overflow="scroll">
+                  &lt;style>
+                    .st0{fill:currentColor}
+                  &lt;/style>
+                  &lt;path class="st0" d="M10 0C4.5 0 0 4.5 0 10s4.5 10 10 10 10-4.5 10-10S15.5 0 10 0zm1.6 15.5c0 .6-.4 1-1 1H9.4c-.6 0-1-.4-1-1v-1.3c0-.6.4-1 1-1h1.3c.6 0 1 .4 1 1v1.3zm0-4.4c0 .6-.4 1-1 1H9.4c-.6 0-1-.4-1-1V4.5c0-.6.4-1 1-1h1.3c.6 0 1 .4 1 1v6.6z"/>
+                &lt;/svg>
+              &lt;/div>
+              &lt;div class="flex flex-col">          
+                &lt;h4 class="font-bold text-black">Danger&lt;/h4>
+                &lt;p class="text-black">Hello i'm a notification. Please read the follwing messages&lt;/p>
+              &lt;/div>
             &lt;/div>
           </code>
         </pre>
@@ -1215,7 +1281,7 @@
         </div>
       </div>
     </main>
-    <script async src="dist/js/dist.js"></script>
-    <script defer src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <script async defer src="dist/js/app.min.js"></script>
+    <script async defer src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
   </body>
 </html>
