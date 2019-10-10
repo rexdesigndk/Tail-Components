@@ -2,7 +2,7 @@ const mix = require("laravel-mix");
 require("laravel-mix-imagemin");
 
 mix
-  .postCss("src/css/main.css", "dist/css/main.min.css", [
+  .postCss("src/css/main.css", "dist/css/", [
     require('postcss-import')({
       path: ['src/css/']
     }),
@@ -15,7 +15,7 @@ mix
       defaultExtractor: content =>content.match(/[A-Za-z0-9-_:\/]+/g) || []
     }),
   ])
-  .js(["src/js/entry.js"], "dist/js/app.min.js")
+  .js(["src/js/entry.js"], "dist/js/bundle.js")
   .imagemin(
     {
       from: "src/img",
