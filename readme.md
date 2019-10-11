@@ -8,10 +8,6 @@ Components made based on default Tailwind. Get a quick baseline for your next Ta
 
 Simply copy paste the code over to your project.
 
-## Built With
-
-* [Tailwind](https://tailwindcss.com/) - Utility CSS Framework.
-
 ## Todo
 
 **1.** Make Hero Sections Responsive.
@@ -20,6 +16,12 @@ Simply copy paste the code over to your project.
 **4.** Custom checkbox/radio input. 
 
 I welcome any feedback or suggestions. 
+
+## Browser Support
+
+IE11+, Firefox, Chrome, Safari
+
+Be Aware: Accordions wont work on IE11, as the details element is not supported on IE.
 
 ## License
 
