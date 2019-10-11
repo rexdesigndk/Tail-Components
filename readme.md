@@ -29,6 +29,6 @@ This project is licensed under the MIT License.
 
 ## Acknowledgments
 
-Thanks to Adam Wathan for his amazing work.   
+Thanks to [Adam Wathan](https://adamwathan.me/) for his amazing work.   
    
 Thanks to [Boxicons](https://boxicons.com/) for their icon set.
