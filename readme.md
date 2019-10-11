@@ -10,13 +10,14 @@ Simply copy paste the code over to your project.
 
 ## Built With
 
-* [Tailwind](https://tailwindcss.com/) - Utility CSS Framework
+* [Tailwind](https://tailwindcss.com/) - Utility CSS Framework.
 
 ## Todo
 
-**1.** Custom checkbox/radio input    
-**2.** Make The Navbar Responsive (mobile menu)  
-**3.** Add more list types   
+**1.** Make Hero Sections Responsive.
+**2.** Make input with text label.
+**3.** Make newsletter components.
+**4.** Custom checkbox/radio input. 
 
 I welcome any feedback or suggestions. 
 
@@ -26,4 +27,6 @@ This project is licensed under the MIT License.
 
 ## Acknowledgments
 
-Thanks to Adam Wathan for his amazing work.
+Thanks to Adam Wathan for his amazing work.   
+   
+Thanks to [Boxicons](https://boxicons.com/) for their icon set.

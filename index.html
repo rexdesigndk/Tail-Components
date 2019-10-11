@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <link rel="preconnect" href="https://unpkg.com" crossorigin />
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="dist/css/main.css" type="text/css"/>
-    <link rel="stylesheet" href="src/css/prism.css" type="text/css">
+    <link rel="stylesheet" href="dist/css/main.css" type="text/css" />
+    <link rel="stylesheet" href="src/css/prism.css" type="text/css" />
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet" />
     <!-- favicons -->
@@ -20,36 +20,49 @@
   </head>
   <body>
     <header>
-      <nav class="w-full bg-white shadow z-10">
-        <div class="flex justify-between items-center max-w-5xl mx-auto py-5">
-          <div class="flex-initial">
-            <img class="h-10 w-auto" src="dist/img/logo.svg" alt="logo" />
-          </div>
-          <ul class="list-none flex items-center">
-            <li class="mr-4 font-bold">
-              License: MIT
+      <div
+        class="flex items-center flex-wrap justify-around max-w-5xl py-5 mx-auto md:justify-between"
+      >
+        <img class="max-w-full h-auto" src="dist/img/logo.svg" alt="Project logo" />
+        <nav class="main-nav">
+          <ul class="mt-4 sm:mt-0 text-center">
+            <li class="inline">
+              <a 
+              class="inline-block p-1 p-2 font-bold hover:text-gray-600 hover:border-l" 
+              href="#content"
+                >View Components</a
+              >
             </li>
-            <li class="mr-4 flex items-center">
-              <p class="mr-2 font-bold">View Source:</p>
+            <li class="inline">
+              <a 
+              class="inline-block p-1 p-2 font-bold hover:text-gray-600 hover:border-l" 
+              href="https://github.com/rexdesigndk/Tail-Components" 
+              target="_blank" 
+              rel="noopener"
+                >Source Code</a
+              >
+            </li>
+            <li class="inline">
               <a
-                class="cursor-pointer hover:text-gray-900"
-                href="https://github.com/rexdesigndk/Tail-Components"
+                class="inline-block py-1 px-2 font-bold hover:text-gray-600 hover:border-l"
+                href="https://github.com/rexdesigndk/Tail-Components/issues" 
+                target="_blank" 
                 rel="noopener"
-                target="_blank"
-                aria-label="link to tail's github page"
-                ><box-icon type="logo" name="github"></box-icon
-              ></a>
+                >Feedback</a
+              >
             </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
       <div class="w-full bg-accent">
         <div class="container max-w-5xl mx-auto">
           <div class="flex">
-            <div class="w-1/2 pl-2">
+            <div class="w-1/2">
               <div class="w-full flex flex-col justify-center items-center py-32">
-                <div class="flex flex-col py-5 max-w-md">
-                  <h1 class="text-black text-6xl mb-3 leading-tight">Tailwind UI Components</h1>
+                <div class="flex flex-col py-5">
+                  <h1 class="text-black text-6xl mb-3 leading-tight">
+                    Tailwind UI Components
+                  </h1>
                   <p class="inline-block text-lg text-gray-800 leading-relaxed max-w-sm">
                     Components made for your next Tailwind project. Get a quick baseline to work
                     from and apply your own styling them to.
@@ -71,7 +84,7 @@
         </div>
       </div>
     </header>
-    <main class="max-w-5xl mx-auto">
+    <main class="max-w-5xl mx-auto overflow-hidden" id="content">
       <div class="container">
         <h2 class="text-4xl font-bold text-black py-5 ">Text</h2>
         <h1 class="text-6xl font-bold text-black">Heading 1</h1>
@@ -130,7 +143,9 @@
                 />
               </div>
               <div class="p-5">
-                <h4 class="text-lg text-black font-bold">Tailwind</h4>
+                <h4 class="text-lg text-black font-bold">
+                  Tailwind
+                </h4>
                 <p class="text-gray-700">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo tempora maxime
                   quidem excepturi.
@@ -167,7 +182,9 @@
           </pre>
           <!-- code preview ends-->
           <div class="w-full max-w-xs">
-            <h3 class="text-2xl font-bold mb-16 mt-5">Card Design 2</h3>
+            <h3 class="text-2xl font-bold mb-16 mt-5">
+              Card Design 2
+            </h3>
             <div class="flex flex-col bg-white border rounded-lg shadow-md mt-8">
               <div class="mx-4 -mt-8 rounded-lg overflow-hidden shadow-md">
                 <img
@@ -178,7 +195,9 @@
                 />
               </div>
               <div class="p-5">
-                <h4 class="text-lg text-black font-bold">Tailwind</h4>
+                <h4 class="text-lg text-black font-bold">
+                  Tailwind
+                </h4>
                 <p class="text-gray-700">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo tempora maxime
                   quidem excepturi.
@@ -231,7 +250,9 @@
                 />
               </div>
               <div class="p-5">
-                <h4 class="text-lg text-black font-bold">Tailwind</h4>
+                <h4 class="text-lg text-black font-bold">
+                  Tailwind
+                </h4>
                 <p class="text-gray-700">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo tempora maxime
                   quidem excepturi.
@@ -288,7 +309,9 @@
                 />
               </div>
               <div class="flex flex-col flex-auto justify-center p-10">
-                <h4 class="text-lg font-bold text-black">Tail Components</h4>
+                <h4 class="text-lg font-bold text-black">
+                  Tail Components
+                </h4>
                 <p classs="text-black">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit ducimus impedit
                   incidunt quibusdam. Eum non itaque et pariatur quis.
@@ -417,7 +440,9 @@
               class="w-full pl-3 py-3"
               placeholder="Enter Text"
             />
-            <button class="bg-accent text-black hover:bg-green-300 p-2 rounded">Submit</button>
+            <button class="bg-accent text-black hover:bg-green-300 p-2 rounded">
+              Submit
+            </button>
           </div>
           <!-- code preview start-->
           <pre>   
@@ -455,7 +480,9 @@
         <h2 class="text-4xl font-bold text-black py-5">Selector</h2>
         <div class="flex flex-wrap">
           <div class="w-full">
-            <h3 class="text-2xl font-bold text-black mb-5">Single Selector:</h3>
+            <h3 class="text-2xl font-bold text-black mb-5">
+              Single Selector:
+            </h3>
             <div class="inline-block relative">
               <select
                 class="block appearance-none w-full bg-white border py-3 px-3 pr-8 rounded cursor-pointer hover:bg-gray-100 focus:bg-gray-100 focus:border-gray-50 overflow-hidden"
@@ -500,9 +527,13 @@
         </div>
       </div>
       <div class="container">
-        <h2 class="text-4xl font-bold text-black py-5">12 Grid System</h2>
+        <h2 class="text-4xl font-bold text-black py-5">
+          12 Grid System
+        </h2>
         <div class="w-full">
-          <h3 class="font-black text-2xl font-bold py-2">4 Column Gird</h3>
+          <h3 class="font-black text-2xl font-bold py-2">
+            4 Column Gird
+          </h3>
           <div class="flex h-12 border">
             <div class="w-3/12 bg-gray-400"></div>
             <div class="w-3/12 bg-gray-800"></div>
@@ -521,7 +552,9 @@
             </code>
           </pre>
           <!-- code preview ends-->
-          <h3 class="font-black text-2xl font-bold py-2">3 Column Gird</h3>
+          <h3 class="font-black text-2xl font-bold py-2">
+            3 Column Gird
+          </h3>
           <div class="flex h-12 border">
             <div class="w-4/12 bg-gray-400"></div>
             <div class="w-4/12 bg-gray-800"></div>
@@ -538,7 +571,9 @@
             </code>
           </pre>
           <!-- code preview ends-->
-          <h3 class="text-2xl font-bold text-black py-2">2 Column Grid</h3>
+          <h3 class="text-2xl font-bold text-black py-2">
+            2 Column Grid
+          </h3>
           <div class="flex h-12 border">
             <div class="w-6/12 bg-gray-400"></div>
             <div class="w-6/12 bg-gray-800"></div>
@@ -553,7 +588,9 @@
             </code>
           </pre>
           <!-- code preview ends-->
-          <h3 class="text-2xl font-bold text-black py-2">Full Width Grid</h3>
+          <h3 class="text-2xl font-bold text-black py-2">
+            Full Width Grid
+          </h3>
           <div class="flex h-12 border">
             <div class="w-full bg-gray-400"></div>
           </div>
@@ -628,11 +665,15 @@
         </div>
       </div>
       <div class="container">
-        <h2 class="text-4xl font-bold text-black py-5">Hero Sections</h2>
+        <h2 class="text-4xl font-bold text-black py-5">
+          Hero Sections
+        </h2>
         <h3 class="text-2xl font-bold text-black font-black"></h3>
         <div class="flex bg-accent">
           <div class="w-full flex flex-col justify-center items-center py-32">
-            <h1 class="text-black text-6xl mb-3">Tailwind Components</h1>
+            <h1 class="text-black text-6xl mb-3">
+              Tailwind Components
+            </h1>
             <p class="inline-block text-lg text-gray-900 max-w-md text-center">
               Components made for your next Tailwind project. Get a quick baseline to work from and
               apply your own styling them to.
@@ -664,7 +705,9 @@
               <div class="w-1/2">
                 <div class="w-full flex flex-col justify-center items-center py-32">
                   <div class="flex flex-col p-5 max-w-md">
-                    <h1 class="text-black text-6xl mb-3">Tailwind Components</h1>
+                    <h1 class="text-black text-6xl mb-3">
+                      Tailwind Components
+                    </h1>
                     <p class="inline-block text-lg text-gray-800 leading-relaxed">
                       Components made for your next Tailwind project. Get a quick baseline to work
                       from and apply your own styling them to.
@@ -793,7 +836,9 @@
         <h2 class="text-4xl font-bold text-black py-5">List</h2>
         <div class="flex flex-wrap">
           <div class="w-full">
-            <h3 class="text-2xl font-bold text-black">Unordered List:</h3>
+            <h3 class="text-2xl font-bold text-black">
+              Unordered List:
+            </h3>
             <ul>
               <li class="py-3">Tailwind</li>
               <li class="pb-3">Tailwind</li>
@@ -816,7 +861,9 @@
             <!-- code preview ends-->
           </div>
           <div class="w-full">
-            <h3 class="text-2xl font-bold text-black">Ordered List:</h3>
+            <h3 class="text-2xl font-bold text-black">
+              Ordered List:
+            </h3>
             <ol class="list-decimal pl-4">
               <li class="py-3">Tail Components</li>
               <li class="py-3">Tail Components</li>
@@ -841,16 +888,24 @@
         </div>
       </div>
       <div class="container">
-        <h2 class="text-4xl font-bold text-black my-5">Tabs (Requires javscript to toggle the tabs)</h2>
+        <h2 class="text-4xl font-bold text-black my-5">
+          Tabs (Requires javscript to toggle the tabs)
+        </h2>
         <div class="flex flex-wrap">
           <div class="w-full">
-            <h3 class="text-2xl font-bold text-black my-2">Horizontal Tabs:</h3>
+            <h3 class="text-2xl font-bold text-black my-2">
+              Horizontal Tabs:
+            </h3>
             <div class="relative">
               <ul class="flex flex-row">
-                <li class="py-3 px-6 mr-1 bg-white border rounded-lg cursor-pointer hover:bg-gray-200">
+                <li
+                  class="py-3 px-6 mr-1 bg-white border rounded-lg cursor-pointer hover:bg-gray-200"
+                >
                   <a href="#tab1">Tab 1</a>
                 </li>
-                <li class="py-3 px-6 mr-1 bg-white border rounded-lg cursor-pointer hover:bg-gray-200">
+                <li
+                  class="py-3 px-6 mr-1 bg-white border rounded-lg cursor-pointer hover:bg-gray-200"
+                >
                   <a href="#tab2">Tab 2</a>
                 </li>
                 <li class="py-3 px-6 bg-white border rounded-lg cursor-pointer hover:bg-gray-200">
@@ -859,8 +914,14 @@
               </ul>
               <div class="flex flex-wrap p-6 mt-1 bg-white border shadow-md rounded-lg">
                 <div class="inline-block" id="tab-1">
-                  <h4 class="text-lg font-bold text-black">Tail Components</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tempora tempore officia neque fuga, quia molestias fugiat quos. Ut, tempora! Repellendus, veniam pariatur. Modi ullam culpa labore consequuntur officiis vel.</p>
+                  <h4 class="text-lg font-bold text-black">
+                    Tail Components
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tempora tempore
+                    officia neque fuga, quia molestias fugiat quos. Ut, tempora! Repellendus, veniam
+                    pariatur. Modi ullam culpa labore consequuntur officiis vel.
+                  </p>
                 </div>
                 <div class="hidden" id="tab-2"></div>
                 <div class="hidden" id="tab-3"></div>
@@ -934,107 +995,136 @@
       </div>
       <!-- code preview ends-->
       <div class="container">
-        <h2 class="text-4xl font-bold text-black py-5">Navbar</h2>
-        <h3 class="text-2xl font-bold text-black py-3">Navigation bar Static:</h3>
-        <nav class="w-full justify-between">
-          <div class="flex items-center max-w-5xl mx-auto p-5 border rounded">
-            <div class="flex-1">
-              <img class="h-10 w-auto" src="dist/img/logo.svg" alt="logo" />
-            </div>
-            <ul class="list-none flex">
-              <li class="mr-4">
-                <a class="font-bold cursor-pointer hover:text-gray-700" href="#">nav 1</a>
+        <h2 class="text-4xl font-bold text-black py-5">Responsive Navbar (CSS ONLY)</h2>
+        <h3 class="text-2xl font-bold text-black py-3">
+          Navigation bar Static:
+        </h3>
+        <div
+          class="flex items-center flex-wrap justify-around max-w-5xl py-5 mx-auto md:justify-between border rounded-lg px-3"
+        >
+          <img class="max-w-full h-auto" src="dist/img/logo.svg" alt="Project logo" />
+          <nav class="main-nav">
+            <ul class="mt-4 sm:mt-0 text-center">
+              <li class="inline">
+                <a class="inline-block p-1 p-2 font-bold hover:text-gray-600" href="#">Nav 1</a>
               </li>
-              <li class="mr-4">
-                <a class="font-bold cursor-pointer hover:text-gray-700" href="#">nav 2</a>
+              <li class="inline">
+                <a class="inline-block p-1 p-2 font-bold hover:text-gray-600" href="#">Nav 2</a>
               </li>
-              <li class="mr-4">
-                <a class="font-bold cursor-pointer hover:text-gray-700" href="#">nav 3</a>
+              <li class="inline">
+                <a class="inline-block p-1 p-2 font-bold hover:text-gray-600" href="#">Nav 3</a>
               </li>
-              <li class="mr-4">
-                <a class="font-bold cursor-pointer hover:text-gray-700" href="#">nav 4</a>
+              <li class="inline">
+                <a class="inline-block py-1 px-2 font-bold hover:text-gray-600" href="#">Nav 4</a>
               </li>
             </ul>
-          </div>
-        </nav>
+          </nav>
+        </div>
       </div>
       <!-- code preview start-->
       <div class="container">
         <pre>   
           <code class="language-html">
-            &lt;nav class="w-full justify-between bg-white shadow">
-              &lt;div class="flex items-center max-w-5xl mx-auto p-5">
-                &lt;div class="flex-1">&lt;img class="h-10 w-auto" src="" alt="logo" />&lt;/div>
-                &lt;ul class="list-none flex">
-                  &lt;li class="mr-4">&lt;a class="font-bold cursor-pointer hover:text-gray-700" href="#">nav 1&lt;/a>&lt;/li>
-                  &lt;li class="mr-4">&lt;a class="font-bold cursor-pointer hover:text-gray-700" href="#">nav 2&lt;/a>&lt;/li>
-                  &lt;li class="mr-4">&lt;a class="font-bold cursor-pointer hover:text-gray-700" href="#">nav 3&lt;/a>&lt;/li>
-                  &lt;li class="mr-4">&lt;a class="font-bold cursor-pointer hover:text-gray-700" href="#">nav 4&lt;/a>&lt;/li>
+            &lt;div class="flex items-center flex-wrap justify-around max-w-5xl py-5 mx-auto md:justify-between">
+              &lt;img class="max-w-full h-auto" src="" alt=""/>
+              &lt;nav class="main-nav">
+                &lt;ul class="mt-4 sm:mt-0 text-center">
+                  &lt;li class="inline">
+                    &lt;a class="inline-block p-1 p-2 font-bold hover:text-gray-600" href="#">Nav 1&lt;/a>
+                  &lt;/li>
+                  &lt;li class="inline">
+                    &lt;a class="inline-block p-1 p-2 font-bold hover:text-gray-600" href="#">Nav 2&lt;/a>
+                  &lt;/li>
+                  &lt;li class="inline">
+                    &lt;a class="inline-block p-1 p-2 font-bold hover:text-gray-600" href="#">Nav 3&lt;/a>
+                  &lt;/li>
+                  &lt;li class="inline">
+                    &lt;a class="inline-block py-1 px-2 font-bold hover:text-gray-600" href="#">Nav 4&lt;/a>
+                  &lt;/li>
                 &lt;/ul>
-              &lt;/div>
-            &lt;/nav>
+              &lt;/nav>
+            &lt;/div>
           </code>
         </pre>
       </div>
       <!-- code preview ends-->
       <div class="container">
-        <h3 class="text-2xl font-bold text-blac py-3">Navigation Bar Fixed:</h3>
-        <nav class="w-full justify-between">
-          <div class="flex items-center max-w-5xl mx-auto p-5 border rounded">
-            <div class="flex-1">
-              <img class="h-10 w-auto" src="dist/img/logo.svg" alt="logo" />
-            </div>
-            <ul class="list-none flex">
-              <li class="mr-4">
-                <a class="font-bold cursor-pointer hover:text-gray-700" href="#">nav 1</a>
+        <h3 class="text-2xl font-bold text-blac py-3">
+          Navigation Bar Fixed:
+        </h3>
+        <div class="flex items-center flex-wrap justify-around max-w-5xl py-5 px-3 mx-auto md:justify-between border rounded-lg">
+          <img class="max-w-full h-auto" src="dist/img/logo.svg" alt="Project logo" />
+          <nav class="main-nav">
+            <ul class="mt-4 sm:mt-0 text-center">
+              <li class="inline">
+                <a class="inline-block p-1 p-2 font-bold hover:text-gray-600 hover:border-l" href="#">Nav 1</a>
               </li>
-              <li class="mr-4">
-                <a class="font-bold cursor-pointer hover:text-gray-700" href="#">nav 2</a>
+              <li class="inline">
+                <a class="inline-block p-1 p-2 font-bold hover:text-gray-600 hover:border-l" href="#">Nav 2</a>
               </li>
-              <li class="mr-4">
-                <a class="font-bold cursor-pointer hover:text-gray-700" href="#">nav 3</a>
+              <li class="inline">
+                <a class="inline-block p-1 p-2 font-bold hover:text-gray-600 hover:border-l" href="#">Nav 3</a>
               </li>
-              <li class="mr-4">
-                <a class="font-bold cursor-pointer hover:text-gray-700" href="#">nav 4</a>
+              <li class="inline">
+                <a class="inline-block py-1 px-2 font-bold hover:text-gray-600 hover:border-l" href="#">Nav 4</a>
               </li>
             </ul>
-          </div>
-        </nav>
+          </nav>
+        </div>
       </div>
       <!-- code preview start-->
       <div class="container">
         <pre>   
-            <code class="language-html">
-              &lt;nav class="w-full justify-between fixed bg-white shadow">
-                &lt;div class="flex items-center max-w-5xl mx-auto p-5">
-                  &lt;div class="flex-1">&lt;img class="h-10 w-auto" src="" alt="logo" />&lt;/div>
-                  &lt;ul class="list-none flex">
-                    &lt;li class="mr-4">&lt;a class="font-bold cursor-pointer hover:text-gray-700" href="#">nav 1&lt;/a>&lt;/li>
-                    &lt;li class="mr-4">&lt;a class="font-bold cursor-pointer hover:text-gray-700" href="#">nav 2&lt;/a>&lt;/li>
-                    &lt;li class="mr-4">&lt;a class="font-bold cursor-pointer hover:text-gray-700" href="#">nav 3&lt;/a>&lt;/li>
-                    &lt;li class="mr-4">&lt;a class="font-bold cursor-pointer hover:text-gray-700" href="#">nav 4&lt;/a>&lt;/li>
+          <code class="language-html">
+            &lt;div class="fixed bg-white shadow-lg w-full z-10">
+              &lt;div class="flex items-center flex-wrap justify-around max-w-5xl py-5 mx-auto md:justify-between">
+                &lt;img class="max-w-full h-auto" src="" alt="" />
+                &lt;nav class="main-nav">
+                  &lt;ul class="mt-4 sm:mt-0 text-center">
+                    &lt;li class="inline">
+                      &lt;a class="inline-block p-1 p-2 font-bold hover:text-gray-600 hover:border-l" href="#">Nav 1&lt;/a>
+                    &lt;/li>
+                    &lt;li class="inline">
+                      &lt;a class="inline-block p-1 p-2 font-bold hover:text-gray-600 hover:border-l" href="#">Nav 2&lt;/a>
+                    &lt;/li>
+                    &lt;li class="inline">
+                      &lt;a class="inline-block p-1 p-2 font-bold hover:text-gray-600 hover:border-l" href="#">Nav 3&lt;/a>
+                    &lt;/li>
+                    &lt;li class="inline">
+                      &lt;a class="inline-block py-1 px-2 font-bold hover:text-gray-600 hover:border-l" href="#">Nav 4&lt;/a>
+                    &lt;/li>
                   &lt;/ul>
-                &lt;/div>
-              &lt;/nav>
-            </code>
-          </pre>
+                &lt;/nav>
+              &lt;/div>
+            &lt;/div>
+          </code>
+        </pre>
       </div>
       <!-- code preview ends-->
       <div class="container">
         <h2 class="text-4xl font-bold text-black py-5">Alerts</h2>
-        <h3 class="text-2xl font-bold text-black py-2">Notification alert:</h3>
+        <h3 class="text-2xl font-bold text-black py-2">
+          Notification alert:
+        </h3>
         <div class="flex items-center rounded bg-accent px-5 py-6">
-          <div class="text-black mr-4"> 
+          <div class="text-black mr-4">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" overflow="scroll">
               <style>
-                .st0{fill:currentColor}
+                .st0 {
+                  fill: currentColor;
+                }
               </style>
-              <path class="st0" d="M10 0C4.5 0 0 4.5 0 10s4.5 10 10 10 10-4.5 10-10S15.5 0 10 0zm5.4 7L10 13.2l-1.3 1.5c-.2.2-.5.2-.7.1l-3.3-2.9c-.2-.2-.2-.5-.1-.7l1-1.1c.2-.3.5-.3.7-.1l1.4 1.2c.2.2.5.2.7-.1l5.1-5.8c.2-.2.5-.2.7-.1l1.1 1c.2.2.3.6.1.8z"/>
+              <path
+                class="st0"
+                d="M10 0C4.5 0 0 4.5 0 10s4.5 10 10 10 10-4.5 10-10S15.5 0 10 0zm5.4 7L10 13.2l-1.3 1.5c-.2.2-.5.2-.7.1l-3.3-2.9c-.2-.2-.2-.5-.1-.7l1-1.1c.2-.3.5-.3.7-.1l1.4 1.2c.2.2.5.2.7-.1l5.1-5.8c.2-.2.5-.2.7-.1l1.1 1c.2.2.3.6.1.8z"
+              />
             </svg>
           </div>
-          <div class="flex flex-col">          
+          <div class="flex flex-col">
             <h4 class="text-lg font-bold text-black">Success</h4>
-            <p class="text-black">Hello i'm a notification. Please read the follwing messages</p>
+            <p class="text-black">
+              Hello i'm a notification. Please read the follwing messages
+            </p>
           </div>
         </div>
         <!-- code preview start-->
@@ -1057,19 +1147,28 @@
           </code>
         </pre>
         <!-- code preview ends-->
-        <h3 class="text-2xl font-bold text-black py-2">Warning alert:</h3>
+        <h3 class="text-2xl font-bold text-black py-2">
+          Warning alert:
+        </h3>
         <div class="flex items-center rounded bg-orange-400 px-5 py-6">
           <div class="text-black mr-4">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" overflow="scroll">
               <style>
-                .st0{fill:currentColor}
+                .st0 {
+                  fill: currentColor;
+                }
               </style>
-              <path class="st0" d="M10 0C4.5 0 0 4.5 0 10s4.5 10 10 10 10-4.5 10-10S15.5 0 10 0zm1 16.3c0 .1 0 .2-.1.3s-.2.1-.3.1H8.8c-.1 0-.2 0-.3-.1s-.1-.2-.1-.3v-1.6c0-.1 0-.2.1-.3s.2-.1.3-.1h1.8c.1 0 .2 0 .3.1.1.1.1.2.1.3v1.6zm2.7-7.6c-.3.4-.7 1-1.2 1.5-.4.4-.7.8-.9 1.1-.2.3-.4.6-.4.9 0 .3-.1.5-.1.6-.1.2-.1.3-.2.3-.1.1-.2.1-.3.1H8.8c-.1 0-.2 0-.3-.1-.1-.1-.1-.2-.1-.3v-.6c.1-.6.2-1.1.5-1.5.3-.4.7-.9 1.2-1.4.4-.4.7-.7.9-1 .2-.3.3-.5.3-.8 0-.5-.1-.9-.5-1.2-.1-.1-.6-.3-1.1-.3-1.2 0-1.9.6-2.1 1.8-.1.2-.3.4-.5.4H5.5c-.1 0-.2 0-.3-.1-.1-.1-.1-.2-.1-.4 0-.7.2-1.3.6-1.9s.9-1 1.6-1.4 1.5-.5 2.5-.5 1.8.2 2.5.5c.6.3 1.1.7 1.4 1.2s.4 1 .4 1.5c0 .7-.1 1.2-.4 1.6z"/>
+              <path
+                class="st0"
+                d="M10 0C4.5 0 0 4.5 0 10s4.5 10 10 10 10-4.5 10-10S15.5 0 10 0zm1 16.3c0 .1 0 .2-.1.3s-.2.1-.3.1H8.8c-.1 0-.2 0-.3-.1s-.1-.2-.1-.3v-1.6c0-.1 0-.2.1-.3s.2-.1.3-.1h1.8c.1 0 .2 0 .3.1.1.1.1.2.1.3v1.6zm2.7-7.6c-.3.4-.7 1-1.2 1.5-.4.4-.7.8-.9 1.1-.2.3-.4.6-.4.9 0 .3-.1.5-.1.6-.1.2-.1.3-.2.3-.1.1-.2.1-.3.1H8.8c-.1 0-.2 0-.3-.1-.1-.1-.1-.2-.1-.3v-.6c.1-.6.2-1.1.5-1.5.3-.4.7-.9 1.2-1.4.4-.4.7-.7.9-1 .2-.3.3-.5.3-.8 0-.5-.1-.9-.5-1.2-.1-.1-.6-.3-1.1-.3-1.2 0-1.9.6-2.1 1.8-.1.2-.3.4-.5.4H5.5c-.1 0-.2 0-.3-.1-.1-.1-.1-.2-.1-.4 0-.7.2-1.3.6-1.9s.9-1 1.6-1.4 1.5-.5 2.5-.5 1.8.2 2.5.5c.6.3 1.1.7 1.4 1.2s.4 1 .4 1.5c0 .7-.1 1.2-.4 1.6z"
+              />
             </svg>
           </div>
-          <div class="flex flex-col">          
+          <div class="flex flex-col">
             <h4 class="text-lg text-black font-bold">Warning</h4>
-            <p class="text-black">Hello i'm a notification. Please read the follwing messages</p>
+            <p class="text-black">
+              Hello i'm a notification. Please read the follwing messages
+            </p>
           </div>
         </div>
         <!-- code preview start-->
@@ -1092,19 +1191,28 @@
           </code>
         </pre>
         <!-- code preview ends-->
-        <h3 class="text-2xl font-bold text-black py-2">Danger alert:</h3>
+        <h3 class="text-2xl font-bold text-black py-2">
+          Danger alert:
+        </h3>
         <div class="flex items-center rounded bg-red-600 px-5 py-6">
           <div class="text-black mr-4">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" overflow="scroll">
               <style>
-                .st0{fill:currentColor}
+                .st0 {
+                  fill: currentColor;
+                }
               </style>
-              <path class="st0" d="M10 0C4.5 0 0 4.5 0 10s4.5 10 10 10 10-4.5 10-10S15.5 0 10 0zm1.6 15.5c0 .6-.4 1-1 1H9.4c-.6 0-1-.4-1-1v-1.3c0-.6.4-1 1-1h1.3c.6 0 1 .4 1 1v1.3zm0-4.4c0 .6-.4 1-1 1H9.4c-.6 0-1-.4-1-1V4.5c0-.6.4-1 1-1h1.3c.6 0 1 .4 1 1v6.6z"/>
+              <path
+                class="st0"
+                d="M10 0C4.5 0 0 4.5 0 10s4.5 10 10 10 10-4.5 10-10S15.5 0 10 0zm1.6 15.5c0 .6-.4 1-1 1H9.4c-.6 0-1-.4-1-1v-1.3c0-.6.4-1 1-1h1.3c.6 0 1 .4 1 1v1.3zm0-4.4c0 .6-.4 1-1 1H9.4c-.6 0-1-.4-1-1V4.5c0-.6.4-1 1-1h1.3c.6 0 1 .4 1 1v6.6z"
+              />
             </svg>
           </div>
-          <div class="flex flex-col">          
+          <div class="flex flex-col">
             <h4 class="text-lg text-black font-bold">Danger</h4>
-            <p class="text-black">Hello i'm a notification. Please read the follwing messages</p>
+            <p class="text-black">
+              Hello i'm a notification. Please read the follwing messages
+            </p>
           </div>
         </div>
         <!-- code preview start-->
@@ -1136,7 +1244,9 @@
             <div class="flex flex-row px-10 pt-16 pb-12">
               <div class="w-1/3 mr-4 justify-start">
                 <div class="flex flex-col justify-start">
-                  <h4 class="text-lg text-black font-bold mb-2">Tail-Components</h4>
+                  <h4 class="text-lg text-black font-bold mb-2">
+                    Tail-Components
+                  </h4>
                   <p>
                     Components made for your next Tailwind project. Get a quick baseline to work
                     from
@@ -1144,7 +1254,9 @@
                 </div>
               </div>
               <div class="w-1/4 mr-4">
-                <h4 class="text-lg text-black font-bold mb-2">Page Links</h4>
+                <h4 class="text-lg text-black font-bold mb-2">
+                  Page Links
+                </h4>
                 <ul class="flex flex-col justify-start">
                   <li>Tailwind</li>
                   <li>Tailwind</li>
@@ -1153,7 +1265,9 @@
                 </ul>
               </div>
               <div class="w-1/4 mr-4">
-                <h4 class="text-lg text-black font-bold mb-2">Resources</h4>
+                <h4 class="text-lg text-black font-bold mb-2">
+                  Resources
+                </h4>
                 <ul class="flex flex-col justify-start">
                   <li>Tailwind</li>
                   <li>Tailwind</li>
@@ -1162,20 +1276,34 @@
                 </ul>
               </div>
               <div class="w-1/4">
-                <h4 class="text-lg text-black font-bold mb-2">Social Media</h4>
+                <h4 class="text-lg text-black font-bold mb-2">
+                  Social Media
+                </h4>
                 <ul class="flex flex-col justify-start">
                   <li>
-                    <a class="hover:text-gray-900 cursor-pointer" href="#" aria-label="Link To Twitter">
+                    <a
+                      class="hover:text-gray-900 cursor-pointer"
+                      href="#"
+                      aria-label="Link To Twitter"
+                    >
                       <box-icon name="twitter" type="logo"></box-icon>
                     </a>
                   </li>
                   <li>
-                    <a class="hover:text-gray-900 cursor-pointer" href="#" aria-label="Link To Dribble">
+                    <a
+                      class="hover:text-gray-900 cursor-pointer"
+                      href="#"
+                      aria-label="Link To Dribble"
+                    >
                       <box-icon name="dribbble" type="logo"></box-icon>
                     </a>
                   </li>
                   <li>
-                    <a class="hover:text-gray-900 cursor-pointer" href="#"  aria-label="Link To Linkedin">
+                    <a
+                      class="hover:text-gray-900 cursor-pointer"
+                      href="#"
+                      aria-label="Link To Linkedin"
+                    >
                       <box-icon name="linkedin-square" type="logo"></box-icon>
                     </a>
                   </li>
@@ -1259,23 +1387,37 @@
           <div class="flex flex-row justify-center px-10 pt-8 pb-6">
             <div class="w-1/3">
               <div class="flex justify-center">
-                <h4 class="text-lg text-black font-bold">Tailwind Components</h4>
+                <h4 class="text-lg text-black font-bold">
+                  Tailwind Components
+                </h4>
               </div>
             </div>
             <div class="w-1/3">
               <ul class="flex flex-row items-center justify-center">
                 <li class="mr-4">
-                  <a class="hover:text-gray-900 cursor-pointer" href="#" aria-label="Link To Twitter">
+                  <a
+                    class="hover:text-gray-900 cursor-pointer"
+                    href="#"
+                    aria-label="Link To Twitter"
+                  >
                     <box-icon name="twitter" type="logo"></box-icon>
                   </a>
                 </li>
                 <li class="mr-4">
-                  <a class="hover:text-gray-900 cursor-pointer" href="#" aria-label="Link To Dribble">
+                  <a
+                    class="hover:text-gray-900 cursor-pointer"
+                    href="#"
+                    aria-label="Link To Dribble"
+                  >
                     <box-icon name="dribbble" type="logo"></box-icon>
                   </a>
                 </li>
                 <li>
-                  <a class="hover:text-gray-900 cursor-pointer" href="#" aria-label="Link To Linkedin">
+                  <a
+                    class="hover:text-gray-900 cursor-pointer"
+                    href="#"
+                    aria-label="Link To Linkedin"
+                  >
                     <box-icon name="linkedin-square" type="logo"></box-icon>
                   </a>
                 </li>
@@ -1283,7 +1425,9 @@
             </div>
             <div class="w-1/3">
               <div class="flex justify-center">
-                <p class="text-sm">Copyright © 2019 rexdesign</p>
+                <p class="text-sm">
+                  Copyright © 2019 rexdesign
+                </p>
               </div>
             </div>
           </div>
@@ -1330,10 +1474,14 @@
         </pre>
         <!-- code preview ends-->
       </div>
-      <div class="container">
-        <h2 class="text-4xl font-bold text-black py-5">Still More To Come!</h2>
+      <div class="container" id="submit-idea">
+        <h2 class="text-4xl font-bold text-black py-5">
+          Still More To Come!
+        </h2>
         <div class="flex mb-5">
-          <h3 class="text-2xl font-bold text-black mb-2">Submit suggestions or any issues:</h3>
+          <h3 class="text-2xl font-bold text-black mb-2">
+            Submit suggestions or any issues:
+          </h3>
           <a
             class="flex items-center justify-center bg-accent hover:bg-green-400 font-bold text-black w-24 p-1 ml-2 cursor-pointer rounded"
             href="https://github.com/rexdesigndk/Tail-Components/issues"

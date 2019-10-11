@@ -7,6 +7,9 @@ module.exports = {
       colors: {
         'accent': '#43FE91',
       }
+    },
+    variants: {
+     borderWidth: ['hover', 'focus'],
     }
   }
 }
