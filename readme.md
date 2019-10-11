@@ -2,7 +2,7 @@
 
 Components made based on default Tailwind. Get a quick baseline for your next Tailwind project.
 
-[Showcase](https://rexdesign.dev/)
+[Showcase](https://rexdesigndk.github.io/Tail-Components/)
 
 ## Usage
 
