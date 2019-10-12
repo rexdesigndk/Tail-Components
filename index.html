@@ -60,7 +60,7 @@
             <div class="w-full md:w-1/2">
               <div class="w-full flex flex-col">
                 <div class="flex flex-col p-5 text-center items-center md:text-left md:items-start">
-                  <h1 class="text-black text-6xl mb-3 leading-tight">
+                  <h1 class="text-black text-5xl mb-3 leading-tight sm:text-6xl">
                     Tailwind UI Components
                   </h1>
                   <p class="inline text-lg text-gray-800 leading-relaxed max-w-sm">
@@ -71,7 +71,7 @@
               </div>
             </div>
             <div class="w-full md:w-1/2">
-              <div class="w-full flex flex-col justify-center items-center h-full">
+              <div class="w-full flex flex-col justify-center items-center h-full px-5">
                 <img
                   class="max-w-xl"
                   src="dist/img/designer.svg"
@@ -84,8 +84,8 @@
         </div>
       </div>
     </header>
-    <main class="max-w-5xl mx-auto overflow-hidden" id="content">
-      <section>
+    <main class="max-w-5xl mx-auto overflow-hidden">
+      <section id="content">
         <h2 class="text-4xl font-bold text-black my-5 ">Text</h2>
         <div class="container mb-10 p-5 border rounded-lg">
           <h1 class="text-6xl font-bold text-black">Heading 1</h1>
@@ -701,9 +701,9 @@
         </h2>
         <div class="container mb-10 p-5 border rounded-lg">
           <h3 class="text-2xl font-bold text-black font-black mb-5">Centered Hero:</h3>
-          <div class="flex bg-accent">
+          <div class="flex w-full bg-accent">
             <div class="w-full flex flex-col justify-center items-center py-32">
-              <h1 class="text-black text-6xl mb-3">
+              <h1 class="text-black text-5xl mb-3 text-center sm:text-6xl">
                 Tailwind Components
               </h1>
               <p class="inline-block text-lg text-gray-900 max-w-md text-center">
@@ -715,15 +715,17 @@
           <!-- code preview start-->
           <pre>   
           <code class="language-html">
-             &lt;div class="flex">
-               &lt;div class="w-full flex flex-col justify-center items-center py-32">
-                 &lt;h1 class="text-black text-6xl mb-3">Tailwind Components&lt;/h1>
-                 &lt;p class="inline-block text-lg text-gray-900 max-w-md text-center">
-                  Components made for your next Tailwind project. Get a quick baseline to work from and
-                  apply your own styling them to.
-                 &lt;/p>
-               &lt;/div>
-             &lt;/div>
+            &lt;div class="flex w-full bg-accent">
+              &lt;div class="w-full flex flex-col justify-center items-center py-32">
+                &lt;h1 class="text-black text-5xl mb-3 text-center sm:text-6xl">
+                  Tailwind Components
+                &lt;/h1>
+                &lt;p class="inline-block text-lg text-gray-900 max-w-md text-center">
+                  Components made for your next Tailwind project. Get a quick baseline to work from
+                  and apply your own styling them to.
+                &lt;/p>
+              &lt;/div>
+            &lt;/div>
           </code>
         </pre>
         </div>
@@ -735,10 +737,8 @@
               <div class="flex flex-wrap items-center py-10 md:py-32">
                 <div class="w-full md:w-1/2">
                   <div class="w-full flex flex-col">
-                    <div
-                      class="flex flex-col p-5 text-center items-center md:text-left md:items-start"
-                    >
-                      <h1 class="text-black text-6xl mb-3 leading-tight">
+                    <div class="flex flex-col p-5 text-center items-center md:text-left md:items-start">
+                      <h1 class="text-black text-5xl mb-3 leading-tight sm:text-6xl">
                         Tailwind UI Components
                       </h1>
                       <p class="inline text-lg text-gray-800 leading-relaxed max-w-sm">
@@ -749,7 +749,7 @@
                   </div>
                 </div>
                 <div class="w-full md:w-1/2">
-                  <div class="w-full flex flex-col justify-center items-center h-full">
+                  <div class="w-full flex flex-col justify-center items-center h-full px-5">
                     <img
                       class="max-w-xl"
                       src="dist/img/designer.svg"
@@ -764,31 +764,15 @@
           <!-- code preview start-->
           <pre>   
           <code class="language-html">
-            &lt;div class="w-full bg-white">
+            &lt;div class="w-full bg-accent">
               &lt;div class="container max-w-5xl mx-auto">
                 &lt;div class="flex flex-wrap items-center py-10 md:py-32">
                   &lt;div class="w-full md:w-1/2">
                     &lt;div class="w-full flex flex-col">
-                      &lt;div class="flex flex-col p-5 text-center items-center md:text-left md:items-start">
-                        &lt;h1 class="text-black text-6xl mb-3 leading-tight">
-                          Tailwind UI Components
-                        &lt;/h1>
-                        &lt;p class="inline text-lg text-gray-800 leading-relaxed max-w-sm">
-                          Components made for your next Tailwind project. Get a quick baseline to work
-                          from and apply your own styling them to.
-                        &lt;/p>
-                      &lt;/div>
+                      &lt;div class="flex flex-col p-5 text-center items-center md:text-left md:items-start">&lt;h1 class="text-black text-5xl mb-3 leading-tight sm:text-6xl">Tailwind UI Components&lt;/h1>&lt;p class="inline text-lg text-gray-800 leading-relaxed max-w-sm">Components made for your next Tailwind project. Get a quick baseline to workfrom and apply your own styling them to.&lt;/p>&lt;/div>
                     &lt;/div>
                   &lt;/div>
-                  &lt;div class="w-full md:w-1/2">
-                    &lt;div class="w-full flex flex-col justify-center items-center h-full">
-                      &lt;img
-                        class="max-w-xl"
-                        src=""
-                        alt=""
-                      />
-                    &lt;/div>
-                  &lt;/div>
+                  &lt;div class="w-full md:w-1/2">&lt;div class="w-full flex flex-col justify-center items-center h-full px-5">&lt;imgclass="max-w-xl"src=""alt=""/>&lt;/div>&lt;/div>
                 &lt;/div>
               &lt;/div>
             &lt;/div>
@@ -807,29 +791,29 @@
                 <thead class="bg-gray-200">
                   <tr>
                     <th class="p-3">#</th>
-                    <th class="p-3 text-left">First</th>
-                    <th class="p-3 text-left">Last</th>
-                    <th class="p-3 text-left">Handle</th>
+                    <th class="p-3 text-left">Framework</th>
+                    <th class="p-3 text-left">Utility Based CSS</th>
+                    <th class="p-3 text-left">Size</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr class="border-t">
                     <th class="p-4">1</th>
-                    <td class="p-4">Mark</td>
-                    <td class="p-4">Otto</td>
-                    <td class="p-4">@mdo</td>
+                    <td class="p-4">Tailwind</td>
+                    <td class="p-4">Yes</td>
+                    <td class="p-4">477.6kb</td>
                   </tr>
                   <tr class="border-t">
                     <th class="p-4">2</th>
-                    <td class="p-4">Jacob</td>
-                    <td class="p-4">Thornton</td>
-                    <td class="p-4">@fat</td>
+                    <td class="p-4">Bootstrap</td>
+                    <td class="p-4">No</td>
+                    <td class="p-4">187.8kb</td>
                   </tr>
                   <tr class="border-t">
-                    <th class="p-4">2</th>
-                    <td class="p-4">Jacob</td>
-                    <td class="p-4">Thornton</td>
-                    <td class="p-4">@fat</td>
+                    <th class="p-4">3</th>
+                    <td class="p-4">Bulma</td>
+                    <td class="p-4">No</td>
+                    <td class="p-4">205.6kb	</td>
                   </tr>
                 </tbody>
               </table>
@@ -838,30 +822,16 @@
           <!-- code preview start-->
           <pre>   
           <code class="language-html">
-            &lt;table class="table-auto w-full border"&gt;
-              &lt;thead class="bg-gray-200"&gt;
-                &lt;tr&gt;
-                  &lt;th class="p-3">#&lt;/th&gt;
-                  &lt;th class="p-3 text-left">First&lt;/th&gt;
-                  &lt;th class="p-3 text-left">Last&lt;/th&gt;
-                  &lt;th class="p-3 text-left">Handle&lt;/th&gt;
-                &lt;/tr&gt;
-              &lt;/thead&gt;
-              &lt;tbody&gt;
-                &lt;tr class="border-t"&gt;
-                  &lt;th class="p-4">1&lt;/th&gt;
-                  &lt;td class="p-4">Mark&lt;/td&gt;
-                  &lt;td class="p-4">Otto&lt;/td&gt;
-                  &lt;td class="p-4">@mdo&lt;/td&gt;
-                &lt;/tr>
-                &lt;tr class="border-t"&gt;
-                &lt;th class="p-4">1&lt;/th&gt;
-                &lt;td class="p-4">Mark&lt;/td&gt;
-                &lt;td class="p-4">Otto&lt;/td&gt;
-                &lt;td class="p-4">@mdo&lt;/td&gt;
-              &lt;/tr>
-              &lt;/tbody>
-            &lt;/table>
+          &lt;table class="table-auto w-full border">
+            &lt;thead class="bg-gray-200">
+              &lt;tr>&lt;th class="p-3">#&lt;/th>&lt;th class="p-3 text-left">Framework&lt;/th>&lt;th class="p-3 text-left">Utility Based CSS&lt;/th>&lt;th class="p-3 text-left">Size&lt;/th>&lt;/tr>
+            &lt;/thead>
+            &lt;tbody>
+              &lt;tr class="border-t">&lt;th class="p-4">1&lt;/th>&lt;td class="p-4">Tailwind&lt;/td>&lt;td class="p-4">Yes&lt;/td>&lt;td class="p-4">477.6kb&lt;/td>&lt;/tr>
+              &lt;tr class="border-t">&lt;th class="p-4">2&lt;/th>&lt;td class="p-4">Bootstrap&lt;/td>&lt;td class="p-4">No&lt;/td>&lt;td class="p-4">187.8kb&lt;/td>&lt;/tr>
+              &lt;tr class="border-t">&lt;th class="p-4">3&lt;/th>&lt;td class="p-4">Bulma&lt;/td>&lt;td class="p-4">No&lt;/td>&lt;td class="p-4">205.6kb&lt;/td>&lt;/tr>
+            &lt;/tbody>
+          &lt;/table>
           </code>
         </pre>
         </div>
@@ -877,20 +847,20 @@
               </h3>
               <ul class="list-inside">
                 <li class="py-3">Tailwind</li>
-                <li class="pb-3">Tailwind</li>
-                <li class="pb-3">Tailwind</li>
-                <li class="pb-3">Tailwind</li>
-                <li class="pb-3">Tailwind</li>
+                <li class="py-3">Bootstrap</li>
+                <li class="py-3">Bulma</li>
+                <li class="py-3">Foundation</li>
+                <li class="py-3">Material</li>
               </ul>
               <!-- code preview start-->
               <pre>   
               <code class="language-html">
-                &lt;ul&gt;
-                  &lt;li class="py-3"&gt;Tailwind&lt;/li&gt;
-                  &lt;li class="pb-3"&gt;Tailwind&lt;/li&gt;
-                  &lt;li class="pb-3"&gt;Tailwind&lt;/li&gt;
-                  &lt;li class="pb-3"&gt;Tailwind&lt;/li&gt;
-                  &lt;li class="pb-3"&gt;Tailwind&lt;/li&gt;
+                &lt;ul class="list-inside"&gt;
+                &lt;li class="py-3">&lt;/li>
+                &lt;li class="py-3">&lt;/li>
+                &lt;li class="py-3">&lt;/li>
+                &lt;li class="py-3">&lt;/li>
+                &lt;li class="py-3">&lt;/li>
                 &lt;/ul&gt;
               </code>
             </pre>
@@ -904,21 +874,21 @@
               Ordered List:
             </h3>
             <ol class="list-inside list-decimal">
-              <li class="py-3">Tail Components</li>
-              <li class="py-3">Tail Components</li>
-              <li class="py-3">Tail Components</li>
-              <li class="py-3">Tail Components</li>
-              <li class="py-3">Tail Components</li>
+              <li class="py-3">Tailwind</li>
+              <li class="py-3">Bootstrap</li>
+              <li class="py-3">Bulma</li>
+              <li class="py-3">Foundation</li>
+              <li class="py-3">Material</li>
             </ol>
             <!-- code preview start-->
             <pre>   
               <code class="language-html">
-                &lt;ol class="list-decimal pl-4"&gt;
-                  &lt;li class="py-3"&gt;Tail Components&lt;/li&gt;
-                  &lt;li class="pb-3"&gt;Tail Components&lt;/li&gt;
-                  &lt;li class="pb-3"&gt;Tail Components&lt;/li&gt;
-                  &lt;li class="pb-3"&gt;Tail Components&lt;/li&gt;
-                  &lt;li class="pb-3"&gt;Tail Components&lt;/li&gt;
+                &lt;ol class="list-inside list-decimal"&gt;
+                &lt;li class="py-3">&lt;/li>
+                &lt;li class="py-3">&lt;/li>
+                &lt;li class="py-3">&lt;/li>
+                &lt;li class="py-3">&lt;/li>
+                &lt;li class="py-3">&lt;/li>
                 &lt;/ol&gt;
               </code>
             </pre>
@@ -973,33 +943,63 @@
               <code class="language-html">
                 &lt;div class="relative">
                   &lt;ul class="flex flex-row">
-                    &lt;li class="py-3 px-6 mr-1 bg-white border rounded-lg cursor-pointer hover:bg-gray-200">
-                      &lt;a href="#tab1">Tab 1&lt;/a>
-                    &lt;/li>
-                    &lt;li class="py-3 px-6 mr-1 bg-white border rounded-lg cursor-pointer hover:bg-gray-200">
-                      &lt;a href="#tab2">Tab 2&lt;/a>
-                    &lt;/li>
-                    &lt;li class="py-3 px-6 bg-white border rounded-lg cursor-pointer hover:bg-gray-200">
-                      &lt;a href="#tab3">Tab 3&lt;/a>
-                    &lt;/li>
+                    &lt;li class="py-3 px-6 mr-1 bg-white border rounded-lg cursor-pointer hover:bg-gray-200">&lt;a href="#tab1">Tab 1&lt;/a>&lt;/li>
+                    &lt;li class="py-3 px-6 mr-1 bg-white border rounded-lg cursor-pointer hover:bg-gray-200">&lt;a href="#tab2">Tab 2&lt;/a>&lt;/li>
+                    &lt;li class="py-3 px-6 bg-white border rounded-lg cursor-pointer hover:bg-gray-200">&lt;a href="#tab3">Tab 3&lt;/a>&lt;/li>
                   &lt;/ul>
                   &lt;div class="flex flex-wrap p-6 mt-1 bg-white border shadow-md rounded-lg">
-                    &lt;div class="inline-block" id="tab-1">
-                      &lt;h4 class="text-lg font-bold text-black">Tail Components&lt;/h4>
-                      &lt;p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tempora tempore officia neque fuga, quia molestias fugiat quos. Ut, tempora! Repellendus, veniam pariatur. Modi ullam culpa labore consequuntur officiis vel.&lt;/p>
-                    &lt;/div>
+                    &lt;div class="inline-block" id="tab-1">&lt;h4 class="text-lg font-bold text-black">&lt;/h4>&lt;p>&lt;/p>&lt;/div>
                     &lt;div class="hidden" id="tab-2">&lt;/div>
                     &lt;div class="hidden" id="tab-3">&lt;/div>
                   &lt;/div>
                 &lt;/div>
               </code>
             </pre>
+              <!-- code preview ends-->
             </div>
           </div>
         </div>
       </section>
       <section>
-        <h2 class="text-4xl font-bold text-black py-5">Accordion</h2>
+        <h2 class="text-4xl font-bold text-black my-5">Breadcrumb</h2>
+        <div class="container mb-10 p-5 border rounded-lg">
+          <div class="flex">
+            <div class="w-full">
+              <h3 class="text-2xl font-bold text-black mb-5">Breadcrumb List</h3>
+              <nav aria-label="breadcrumb">
+                <ol class="flex flex-row items-center bg-white shadow border rounded-lg p-5">
+                  <li><a class="cursor-pointer" href="#">CSS</a></li>
+                  <span class="font-bold text-black mx-2">/</span>
+                  <li><a class="cursor-pointer" href="#">Tailwind</a></li>
+                  <span class="font-bold text-black mx-2">/</span>
+                  <li><a class="cursor-pointer" href="#">Components</a></li>
+                  <span class="font-bold text-black mx-2">/</span>
+                  <li class="font-bold"><a class="cursor-pointer" href="#">Breadcrumb</a></li>
+                </ol>
+              </nav>
+              <!-- code preview start-->
+              <pre>   
+                <code class="language-html">
+                  &lt;nav aria-label="breadcrumb">
+                    &lt;ol class="flex flex-row items-center bg-white shadow border rounded-lg p-5">
+                      &lt;li&lt;a class="cursor-pointer" href="#">CSS&lt;/a>&lt;/li>
+                      &lt;span class="font-bold text-black mx-2">/&lt;/span>
+                      &lt;li&lt;a class="cursor-pointer" href="#">Tailwind&lt;/a>&lt;/li>
+                      &lt;span class="font-bold text-black mx-2">/&lt;/span>
+                      &lt;li&lt;a class="cursor-pointer" href="#">Components&lt;/a>&lt;/li>
+                      &lt;span class="font-bold text-black mx-2">/&lt;/span>
+                      &lt;li&lt;a class="cursor-pointer" href="#">Breadcrumb&lt;/a>&lt;/li>
+                    &lt;/ol>
+                  &lt;/nav>
+                </code>
+              </pre>
+              <!-- code preview ends-->
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2 class="text-4xl font-bold text-black my-5">Accordion</h2>
         <div class="container mb-10 p-5 border rounded-lg">
           <div class="flex flex-wrap">
             <div class="w-full">
@@ -1007,13 +1007,13 @@
                 Details element is only supported in modern browsers!
               </h3>
               <a
-                class="font-bold text-black hover:text-gray-500"
+                class="font-bold text-black hover:text-gray-600"
                 href="https://github.com/javan/details-element-polyfill"
                 >Polyfill For IE</a
               >
               <div class="my-5"></div>
               <details class="bg-white border shadow-lg rounded">
-                <summary class="p-5 border-b cursor-pointer hover:bg-gray-100">Tailwind</summary>
+                <summary class="p-5 border-b cursor-pointer hover:text-gray-600">Tailwind</summary>
                 <p class="py-5 pl-5">
                   Tailwind CSS is a highly customizable, low-level CSS framework that gives you all
                   of the building blocks you need to build bespoke designs without any annoying
@@ -1026,10 +1026,8 @@
           <pre>   
           <code class="language-html">
             &lt;details class="bg-white border shadow-lg rounded"&gt;
-              &lt;summary class="p-3 border-b cursor-pointer hover:bg-gray-100">Tailwind&lt;/summary&gt;
-              &lt;p class="py-5 pl-5"&gt;
-              Tailwind CSS is a highly customizable, low-level CSS framework that gives you all of the building blocks you need to build bespoke designs without any annoying opinionated styles you have to fight to override.
-              &lt;/p&gt;
+              &lt;summary class="p-3 border-b cursor-pointer hover:text-gray-600">Tailwind&lt;/summary&gt;
+              &lt;p class="py-5 pl-5"&gt;Tailwind CSS is a highly customizable, low-level CSS framework that gives you all of the building blocks you need to build bespoke designs without any annoying opinionated styles you have to fight to override.&lt;/p&gt;
             &lt;/details&gt;
           </code>
         </pre>
@@ -1070,18 +1068,10 @@
               &lt;img class="max-w-full h-auto" src="" alt=""/>
               &lt;nav class="main-nav">
                 &lt;ul class="mt-4 sm:mt-0 text-center">
-                  &lt;li class="inline">
-                    &lt;a class="inline-block p-1 p-2 font-bold hover:text-gray-600" href="#">Nav 1&lt;/a>
-                  &lt;/li>
-                  &lt;li class="inline">
-                    &lt;a class="inline-block p-1 p-2 font-bold hover:text-gray-600" href="#">Nav 2&lt;/a>
-                  &lt;/li>
-                  &lt;li class="inline">
-                    &lt;a class="inline-block p-1 p-2 font-bold hover:text-gray-600" href="#">Nav 3&lt;/a>
-                  &lt;/li>
-                  &lt;li class="inline">
-                    &lt;a class="inline-block py-1 px-2 font-bold hover:text-gray-600" href="#">Nav 4&lt;/a>
-                  &lt;/li>
+                  &lt;li class="inline">&lt;a class="inline-block p-1 p-2 font-bold hover:text-gray-600" href="#">Nav 1&lt;/a>&lt;/li>
+                  &lt;li class="inline">&lt;a class="inline-block p-1 p-2 font-bold hover:text-gray-600" href="#">Nav 2&lt;/a>&lt;/li>
+                  &lt;li class="inline">&lt;a class="inline-block p-1 p-2 font-bold hover:text-gray-600" href="#">Nav 3&lt;/a>&lt;/li>
+                  &lt;li class="inline">&lt;a class="inline-block py-1 px-2 font-bold hover:text-gray-600" href="#">Nav 4&lt;/a>&lt;/li>
                 &lt;/ul>
               &lt;/nav>
             &lt;/div>
@@ -1138,18 +1128,10 @@
                   &lt;img class="max-w-full h-auto" src="" alt="" />
                   &lt;nav class="main-nav">
                     &lt;ul class="mt-4 sm:mt-0 text-center">
-                      &lt;li class="inline">
-                        &lt;a class="inline-block p-1 p-2 font-bold hover:text-gray-600 hover:border-l" href="#">Nav 1&lt;/a>
-                      &lt;/li>
-                      &lt;li class="inline">
-                        &lt;a class="inline-block p-1 p-2 font-bold hover:text-gray-600 hover:border-l" href="#">Nav 2&lt;/a>
-                      &lt;/li>
-                      &lt;li class="inline">
-                        &lt;a class="inline-block p-1 p-2 font-bold hover:text-gray-600 hover:border-l" href="#">Nav 3&lt;/a>
-                      &lt;/li>
-                      &lt;li class="inline">
-                        &lt;a class="inline-block py-1 px-2 font-bold hover:text-gray-600 hover:border-l" href="#">Nav 4&lt;/a>
-                      &lt;/li>
+                      &lt;li class="inline">&lt;a class="inline-block p-1 p-2 font-bold hover:text-gray-600 hover:border-l" href="#">Nav 1&lt;/a>&lt;/li>
+                      &lt;li class="inline">&lt;a class="inline-block p-1 p-2 font-bold hover:text-gray-600 hover:border-l" href="#">Nav 2&lt;/a>&lt;/li>
+                      &lt;li class="inline">&lt;a class="inline-block p-1 p-2 font-bold hover:text-gray-600 hover:border-l" href="#">Nav 3&lt;/a>&lt;/li>
+                      &lt;li class="inline">&lt;a class="inline-block py-1 px-2 font-bold hover:text-gray-600 hover:border-l" href="#">Nav 4&lt;/a>&lt;/li>
                     &lt;/ul>
                   &lt;/nav>
                 &lt;/div>
@@ -1347,7 +1329,7 @@
                   <ul class="flex flex-col justify-start">
                     <li>
                       <a
-                        class="hover:text-gray-900 cursor-pointer"
+                        class="fill-current cursor-pointer hover:text-gray-600"
                         href="#"
                         aria-label="Link To Twitter"
                       >
@@ -1356,7 +1338,7 @@
                     </li>
                     <li>
                       <a
-                        class="hover:text-gray-900 cursor-pointer"
+                        class="fill-current cursor-pointer hover:text-gray-600"
                         href="#"
                         aria-label="Link To Dribble"
                       >
@@ -1365,7 +1347,7 @@
                     </li>
                     <li>
                       <a
-                        class="hover:text-gray-900 cursor-pointer"
+                        class="fill-current cursor-pointer hover:text-gray-600"
                         href="#"
                         aria-label="Link To Linkedin"
                       >
@@ -1386,31 +1368,10 @@
             &lt;footer class="w-full bg-accent border-t ">
               &lt;div class="container">
                 &lt;div class="flex flex-row px-10 pt-16 pb-12">
-                  &lt;div class="w-1/3 mr-4 justify-start">
-                    &lt;div class="flex flex-col justify-start">
-                      &lt;h4 class="text-lg text-black font-bold mb-2">Tail-Components&lt;/h4>
-                      &lt;p>
-                        Components made for your next Tailwind project. Get a quick baseline to work
-                        from
-                      &lt;/p>
-                    &lt;/div>
-                  &lt;/div>
-                  &lt;div class="w-1/4 mr-4">
-                    &lt;h4 class="text-lg text-black font-bold mb-2">Page Links&lt;/h4>
-                    &lt;ul class="flex flex-col justify-start">&lt;li>Tailwind&lt;/li>&lt;li>Tailwind&lt;/li>&lt;li>Tailwind&lt;/li>&lt;li>Tailwind&lt;/li>&lt;/ul>
-                  &lt;/div>
-                  &lt;div class="w-1/4 mr-4">
-                    &lt;h4 class="text-lg text-black font-bold mb-2">Resources&lt;/h4>
-                    &lt;ul class="flex flex-col justify-start">&lt;li>Tailwind&lt;/li>&lt;li>Tailwind&lt;/li>&lt;li>Tailwind&lt;/li>&lt;li>Tailwind&lt;/li>&lt;/ul>
-                  &lt;/div>
-                  &lt;div class="w-1/4">
-                    &lt;h4 class="text-lg text-black font-bold mb-2">Social Media &lt;/h4>
-                    &lt;ul class="flex flex-col justify-start">
-                      &lt;li>&lt;a class="hover:text-gray-900 cursor-pointer" href="#" aria-label="">&lt;box-icon name="twitter" type="logo">&lt;/box-icon>&lt;/a>&lt;/li>
-                      &lt;li>&lt;a class="hover:text-gray-900 cursor-pointer" href="#" aria-label="">&lt;box-icon name="dribbble" type="logo">&lt;/box-icon>&lt;/a>&lt;/li>
-                      &lt;li>&lt;a class="hover:text-gray-900 cursor-pointer" href="#" aria-label="">&lt;box-icon name="linkedin-square" type="logo">&lt;/box-icon>&lt;/a>&lt;/li>
-                    &lt;/ul>
-                  &lt;/div>
+                  &lt;div class="w-1/3 mr-4 justify-start">&lt;div class="flex flex-col justify-start">&lt;h4 class="text-lg text-black font-bold mb-2">Tail-Components&lt;/h4>&lt;p>Components made for your next Tailwind project. Get a quick baseline to workfrom&lt;/p>&lt;/div>&lt;/div>
+                  &lt;div class="w-1/4 mr-4">&lt;h4 class="text-lg text-black font-bold mb-2">Page Links&lt;/h4>&lt;ul class="flex flex-col justify-start">&lt;li>Tailwind&lt;/li>&lt;li>Tailwind&lt;/li>&lt;li>Tailwind&lt;/li>&lt;li>Tailwind&lt;/li>&lt;/ul>&lt;/div>
+                  &lt;div class="w-1/4 mr-4">&lt;h4 class="text-lg text-black font-bold mb-2">Resources&lt;/h4>&lt;ul class="flex flex-col justify-start">&lt;li>Tailwind&lt;/li>&lt;li>Tailwind&lt;/li>&lt;li>Tailwind&lt;/li>&lt;li>Tailwind&lt;/li>&lt;/ul>&lt;/div>
+                  &lt;div class="w-1/4">&lt;h4 class="text-lg text-black font-bold mb-2">Social Media &lt;/h4>&lt;ul class="flex flex-col justify-start">&lt;li>&lt;a class="fill-current cursor-pointer hover:text-gray-600" href="#" aria-label="">&lt;box-icon name="twitter" type="logo">&lt;/box-icon>&lt;/a>&lt;/li>&lt;li>&lt;a class="fill-current cursor-pointer hover:text-gray-600" href="#" aria-label="">&lt;box-icon name="dribbble" type="logo">&lt;/box-icon>&lt;/a>&lt;/li>&lt;li>&lt;a class="fill-current cursor-pointer hover:text-gray-600" href="#" aria-label="">&lt;box-icon name="linkedin-square" type="logo">&lt;/box-icon>&lt;/a>&lt;/li>&lt;/ul>&lt;/div>
                 &lt;/div>
               &lt;/div>
               &lt;div class="w-full bg-white px-10 py-5 flex border">&lt;p class="text-sm">Copyright © 2019 rexdesign&lt;/p>&lt;/div>
@@ -1434,7 +1395,7 @@
                 <ul class="flex flex-row items-center justify-center">
                   <li class="mr-4">
                     <a
-                      class="hover:text-gray-900 cursor-pointer"
+                      class="fill-current cursor-pointer hover:text-gray-600"
                       href="#"
                       aria-label="Link To Twitter"
                     >
@@ -1443,7 +1404,7 @@
                   </li>
                   <li class="mr-4">
                     <a
-                      class="hover:text-gray-900 cursor-pointer"
+                      class="fill-current cursor-pointer hover:text-gray-600"
                       href="#"
                       aria-label="Link To Dribble"
                     >
@@ -1452,7 +1413,7 @@
                   </li>
                   <li>
                     <a
-                      class="hover:text-gray-900 cursor-pointer"
+                      class="fill-current cursor-pointer hover:text-gray-600"
                       href="#"
                       aria-label="Link To Linkedin"
                     >
@@ -1475,35 +1436,15 @@
           <code class="language-html">
             &lt;footer class="w-full bg-accent">
               &lt;div class="flex flex-row justify-center px-10 pt-8 pb-6">
-                &lt;div class="w-1/3">
-                  &lt;div class="flex justify-center">
-                    &lt;h4 class="text-lg text-black font-bold">Tailwind Components&lt;/h4>
-                  &lt;/div>
-                &lt;/div>
+                &lt;div class="w-1/3">&lt;div class="flex justify-center">&lt;h4 class="text-lg text-black font-bold">Tailwind Components&lt;/h4>&lt;/div>&lt;/div>
                 &lt;div class="w-1/3">
                   &lt;ul class="flex flex-row items-center justify-center">
-                    &lt;li class="mr-4">
-                      &lt;a class="hover:text-gray-900 cursor-pointer" href="#" aria-label="">
-                        &lt;box-icon name="twitter" type="logo">&lt;/box-icon>
-                      &lt;/a>
-                    &lt;/li>
-                    &lt;li class="mr-4">
-                      &lt;a class="hover:text-gray-900 cursor-pointer" href="#" aria-label="">
-                        &lt;box-icon name="dribbble" type="logo">&lt;/box-icon>
-                      &lt;/a>
-                    &lt;/li>
-                    &lt;li>
-                      &lt;a class="hover:text-gray-900 cursor-pointer" href="#" aria-label="">
-                        &lt;box-icon name="linkedin-square" type="logo">&lt;/box-icon>
-                      &lt;/a>
-                    &lt;/li>
+                    &lt;li class="mr-4">&lt;a class="fill-current cursor-pointer hover:text-gray-600" href="#" aria-label="">&lt;box-icon name="twitter" type="logo">&lt;/box-icon>&lt;/a>&lt;/li>
+                    &lt;li class="mr-4">&lt;a class="fill-current cursor-pointer hover:text-gray-600" href="#" aria-label="">&lt;box-icon name="dribbble" type="logo">&lt;/box-icon>&lt;/a>&lt;/li>
+                    &lt;li>&lt;a class="fill-current cursor-pointer hover:text-gray-600" href="#" aria-label="">&lt;box-icon name="linkedin-square" type="logo">&lt;/box-icon>&lt;/a>&lt;/li>
                   &lt;/ul>
                 &lt;/div>
-                &lt;div class="w-1/3">
-                  &lt;div class="flex justify-center">
-                    &lt;p class="text-sm">Copyright © 2019 rexdesign&lt;/p>
-                  &lt;/div>
-                &lt;/div>
+                &lt;div class="w-1/3">&lt;div class="flex justify-center">&lt;p class="text-sm">Copyright © 2019 rexdesign&lt;/p>&lt;/div>&lt;/div>
               &lt;/div>
             &lt;/footer>
           </code>

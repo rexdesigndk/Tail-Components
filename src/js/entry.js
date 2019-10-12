@@ -1,4 +1,5 @@
 import Prism from 'prismjs';
+
 var Normalizer = require('prismjs/plugins/normalize-whitespace/prism-normalize-whitespace');
 
 Prism.highlightAll();
