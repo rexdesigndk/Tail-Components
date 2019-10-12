@@ -7,3 +7,7 @@
 .transform-perspective-left {
   transform: scale(1) perspective(500px) rotateX(0deg) rotateY(-15deg) rotateZ(0deg) translateY(0px);
 }
+
+.separator {
+
+}
