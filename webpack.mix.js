@@ -4,17 +4,17 @@ require("laravel-mix-imagemin");
 mix
   .js(["src/js/entry.js"], "dist/js/bundle.js")
   .postCss("src/css/main.css", "dist/css/", [
-    require('postcss-import')({
-      path: ['src/css/']
+    require("postcss-import")({
+      path: ["src/css/"]
     }),
-    require("tailwindcss"), 
+    require("tailwindcss"),
     require("autoprefixer"),
-    require('@fullhuman/postcss-purgecss')({
-      content: ['index.html'],
-      css: ['/src/css/main.css'],
-      defaultExtractor: content =>content.match(/[A-Za-z0-9-_:\/]+/g) || []
+    require("@fullhuman/postcss-purgecss")({
+      content: ["index.html"],
+      from: ["/src/css/main.css"],
+      defaultExtractor: content => content.match(/[A-Za-z0-9-_:\/]+/g) || []
     }),
-    require('cssnano')
+    require("cssnano")
   ])
   .imagemin(
     {

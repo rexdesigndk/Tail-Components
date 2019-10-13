@@ -9,9 +9,9 @@ Components made based on default Tailwind. Get a quick baseline for your next Ta
 Simply copy paste the code over to your project.    
 
 ## Todo
-  
-**1.** Make newsletter components.     
-**2.** Custom checkbox/radio input.    
+
+**1.** Custom checkbox/radio input.   
+**2.** Make the showcase responsive. 
 
 I welcome any feedback or suggestions.   
 
