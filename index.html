@@ -19,6 +19,137 @@
     <link rel="icon" href="dist/img/favicon.png" type="image/x-icon" />
   </head>
   <body>
+    <aside
+      class="w-40 sm:w-64 h-full bg-white shadow-md border fixed left-0 top-0 z-10 overflow-y-auto"
+    >
+      <div class="flex flex-col items-stretch min-h-full">
+        <div class="flex-shrink-0 hidden sm:flex justify-center items-center py-10 border-b">
+          <img class="h-10" src="dist/img/logo.svg" alt="project logo" />
+        </div>
+        <nav class="flex-grow sm:ml-10 ml-5 my-10 flex-shrink-0">
+          <ol class="list-inside">
+            <li class="pb-3">
+              <h4 class="text-lg text-black font-bold">Components</h4>
+            </li>
+            <li class="pb-3">
+              <a class="cursor-pointer text-black hover:text-gray-800 hover:font-bold" href="#text"
+                >Text</a
+              >
+            </li>
+            <li class="pb-3">
+              <a class="cursor-pointer text-black hover:text-gray-800 hover:font-bold" href="#cards"
+                >Cards</a
+              >
+            </li>
+            <li class="pb-3">
+              <a
+                class="cursor-pointer text-black hover:text-gray-800 hover:font-bold"
+                href="#buttons"
+                >Buttons</a
+              >
+            </li>
+            <li class="pb-3">
+              <a
+                class="cursor-pointer text-black hover:text-gray-800 hover:font-bold"
+                href="#inputs"
+                >Inputs</a
+              >
+            </li>
+            <li class="pb-3">
+              <a
+                class="cursor-pointer text-black hover:text-gray-800 hover:font-bold"
+                href="#selector"
+                >Selector</a
+              >
+            </li>
+            <li class="pb-3">
+              <a
+                class="cursor-pointer text-black hover:text-gray-800 hover:font-bold"
+                href="#badgesPills"
+                >Badges/Pills</a
+              >
+            </li>
+            <li class="pb-3">
+              <a class="cursor-pointer text-black hover:font-bold" href="#gridSystem"
+                >Grid System</a
+              >
+            </li>
+            <li class="pb-3">
+              <a class="cursor-pointer text-black hover:font-bold" href="#heroSections"
+                >Hero Sections</a
+              >
+            </li>
+            <li class="pb-3">
+              <a class="cursor-pointer text-black hover:font-bold" href="#table">Table</a>
+            </li>
+            <li class="pb-3">
+              <a class="cursor-pointer text-black hover:font-bold" href="#tab">Tabs</a>
+            </li>
+            <li class="pb-3">
+              <a class="cursor-pointer text-black hover:font-bold" href="#breadcrumb"
+                >Breadcrumb</a
+              >
+            </li>
+            <li class="pb-3">
+              <a class="cursor-pointer text-black hover:font-bold" href="#accordion"
+                >Accordion</a
+              >
+            </li>
+            <li class="pb-3">
+              <a class="cursor-pointer text-black hover:font-bold" href="#navbars">Navbars</a>
+            </li>
+            <li class="pb-3">
+              <a class="cursor-pointer text-black hover:font-bold" href="#alerts">Alerts</a>
+            </li>
+            <li class="pb-3">
+              <a class="cursor-pointer text-black hover:font-bold" href="#footers">Footers</a>
+            </li>
+          </ol>
+        </nav>
+        <div class="flex-shrink-0 py-10 pl-5 sm:pl-10 border-t">
+          <ul
+            class="flex flex-wrap sm:flex-no-wrap flex-row items-center justify-start pb-2"
+          >
+            <li>
+              <a
+                class="fill-current cursor-pointer hover:text-gray-600"
+                href="https://github.com/rexdesigndk/Tail-Components"
+                target="_blank"
+                rel="noopener"
+                aria-label="link to github"
+              >
+                <box-icon type="logo" name="github"></box-icon>
+              </a>
+            </li>
+            <li class="mx-5">
+              <a
+                class="fill-current cursor-pointer hover:text-gray-600"
+                href="https://twitter.com/rexdesigndk"
+                target="_blank"
+                rel="noopener"
+                aria-label="link to twitter"
+              >
+                <box-icon name="twitter" type="logo"></box-icon>
+              </a>
+            </li>
+            <li>
+              <a
+                class="fill-current cursor-pointer hover:text-gray-600"
+                href="https://codepen.io/rexdesigndk"
+                target="_blank"
+                rel="noopener"
+                aria-label="link to codepen"
+              >
+                <box-icon type="logo" name="codepen"></box-icon>
+              </a>
+            </li>
+          </ul>
+          <div class="">
+            <p>© 2019 rexdesign</p>
+          </div>
+        </div>
+      </div>
+    </aside>
     <header class="ml-40 sm:ml-64 overflow-hidden" id="top">
       <div class="flex items-center bg-accent py-32 px-10">
         <div class="w-1/2 flex flex-col items-start justify-start">
@@ -35,127 +166,6 @@
         </div>
       </div>
     </header>
-    <aside
-      class="w-40 sm:w-64 h-full bg-white shadow-md border fixed left-0 top-0 z-10 overflow-y-auto"
-    >
-      <div class="hidden sm:flex justify-center items-center py-10 border-b">
-        <img class="h-10" src="dist/img/logo.svg" alt="project logo" />
-      </div>
-      <nav class="sm:ml-10 ml-5 my-10">
-        <ol class="list-inside">
-          <li class="pb-3">
-            <h4 class="text-lg text-black font-bold">Components</h4>
-          </li>
-          <li class="pb-3">
-            <a class="cursor-pointer text-black hover:text-gray-800 hover:font-bold" href="#text"
-              >Text</a
-            >
-          </li>
-          <li class="pb-3">
-            <a class="cursor-pointer text-black hover:text-gray-800 hover:font-bold" href="#cards"
-              >Cards</a
-            >
-          </li>
-          <li class="pb-3">
-            <a class="cursor-pointer text-black hover:text-gray-800 hover:font-bold" href="#buttons"
-              >Buttons</a
-            >
-          </li>
-          <li class="pb-3">
-            <a class="cursor-pointer text-black hover:text-gray-800 hover:font-bold" href="#inputs"
-              >Inputs</a
-            >
-          </li>
-          <li class="pb-3">
-            <a
-              class="cursor-pointer text-black hover:text-gray-800 hover:font-bold"
-              href="#selector"
-              >Selector</a
-            >
-          </li>
-          <li class="pb-3">
-            <a
-              class="cursor-pointer text-black hover:text-gray-800 hover:font-bold"
-              href="#badgesPills"
-              >Badges/Pills</a
-            >
-          </li>
-          <li class="pb-3">
-            <a class="cursor-pointer text-black hover:text-gray-600" href="#gridSystem"
-              >Grid System</a
-            >
-          </li>
-          <li class="pb-3">
-            <a class="cursor-pointer text-black hover:text-gray-600" href="#heroSections"
-              >Hero Sections</a
-            >
-          </li>
-          <li class="pb-3">
-            <a class="cursor-pointer text-black hover:text-gray-600" href="#table">Table</a>
-          </li>
-          <li class="pb-3">
-            <a class="cursor-pointer text-black hover:text-gray-600" href="#tab">Tabs</a>
-          </li>
-          <li class="pb-3">
-            <a class="cursor-pointer text-black hover:text-gray-600" href="#breadcrumb"
-              >Breadcrumb</a
-            >
-          </li>
-          <li class="pb-3">
-            <a class="cursor-pointer text-black hover:text-gray-600" href="#accordion">Accordion</a>
-          </li>
-          <li class="pb-3">
-            <a class="cursor-pointer text-black hover:text-gray-600" href="#navbars">Navbars</a>
-          </li>
-          <li class="pb-3">
-            <a class="cursor-pointer text-black hover:text-gray-600" href="#alerts">Alerts</a>
-          </li>
-          <li class="pb-3">
-            <a class="cursor-pointer text-black hover:text-gray-600" href="#footers">Footers</a>
-          </li>
-        </ol>
-      </nav>
-      <ul
-        class="flex flex-wrap sm:flex-no-wrap flex-row items-center justify-start pl-5 py-10 sm:pl-10 border-t"
-      >
-        <li>
-          <a
-            class="fill-current cursor-pointer hover:text-gray-600"
-            href="https://github.com/rexdesigndk/Tail-Components"
-            target="_blank"
-            rel="noopener"
-            aria-label="link to github"
-          >
-            <box-icon type="logo" name="github"></box-icon>
-          </a>
-        </li>
-        <li class="mx-5">
-          <a
-            class="fill-current cursor-pointer hover:text-gray-600"
-            href="https://twitter.com/rexdesigndk"
-            target="_blank"
-            rel="noopener"
-            aria-label="link to twitter"
-          >
-            <box-icon name="twitter" type="logo"></box-icon>
-          </a>
-        </li>
-        <li>
-          <a
-            class="fill-current cursor-pointer hover:text-gray-600"
-            href="https://codepen.io/rexdesigndk"
-            target="_blank"
-            rel="noopener"
-            aria-label="link to codepen"
-          >
-            <box-icon type="logo" name="codepen"></box-icon>
-          </a>
-        </li>
-      </ul>
-      <div class="pl-5 sm:pl-10">
-        <p>© 2019 rexdesign</p>
-      </div>
-    </aside>
     <main class="ml-40 sm:ml-64 p-5 overflow-hidden">
       <section id="text">
         <h2 class="text-4xl font-bold text-black my-5 ">Text</h2>
@@ -1545,9 +1555,13 @@
         </div>
       </section>
       <div class="fixed bottom-0 right-0 p-2">
-				<a class="bg-white shadow border rounded-lg flex items-center p-2" href="#top" aria-label="return to top of the page">
-					<box-icon name="chevron-up"></box-icon>
-				</a>
+        <a
+          class="bg-white shadow border rounded-lg flex items-center p-2"
+          href="#top"
+          aria-label="return to top of the page"
+        >
+          <box-icon name="chevron-up"></box-icon>
+        </a>
       </div>
     </main>
     <script async defer src="dist/js/bundle.js"></script>
